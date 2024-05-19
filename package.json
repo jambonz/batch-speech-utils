@@ -1,0 +1,42 @@
+{
+  "name": "batch-speech-utils",
+  "version": "0.0.1",
+  "description": "Non-realtime speech-to-text utilities for transcribing calls after they have completed",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test node test/ ",
+    "coverage": "nyc --reporter html --report-dir ./coverage npm run test",
+    "jslint": "eslint index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jambonz/batch-speech-utils.git"
+  },
+  "author": "Dave Horton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jambonz/batch-speech-utils/issues"
+  },
+  "homepage": "https://github.com/jambonz/batch-speech-utils#readme",
+  "dependencies": {
+    "@aws-sdk/client-polly": "^3.496.0",
+    "@aws-sdk/client-sts": "^3.496.0",
+    "@google-cloud/text-to-speech": "^5.0.2",
+    "@grpc/grpc-js": "^1.9.14",
+    "bent": "^7.3.12",
+    "debug": "^4.3.4",
+    "form-urlencoded": "^6.1.4",
+    "google-protobuf": "^3.21.2",
+    "microsoft-cognitiveservices-speech-sdk": "1.36.0",
+    "openai": "^4.25.0",
+    "undici": "^6.4.0"
+  },
+  "devDependencies": {
+    "config": "^3.3.10",
+    "eslint": "^8.56.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "nyc": "^15.1.0",
+    "pino": "^8.17.0",
+    "tape": "^5.7.3"
+  }
+}
