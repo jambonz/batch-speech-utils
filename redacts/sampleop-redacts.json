@@ -1,0 +1,285 @@
+{
+  "transcript": "Hey. My name is John. My phone number is 813-567-980, and I live in Lakeview Oaks.",
+  "timestamps": [
+    {
+      "word": "hey",
+      "start": 0.88,
+      "end": 1.38,
+      "confidence": 0.9975586,
+      "punctuated_word": "Hey."
+    },
+    {
+      "word": "my",
+      "start": 1.92,
+      "end": 2.08,
+      "confidence": 1,
+      "punctuated_word": "My"
+    },
+    {
+      "word": "name",
+      "start": 2.08,
+      "end": 2.32,
+      "confidence": 1,
+      "punctuated_word": "name"
+    },
+    {
+      "word": "is",
+      "start": 2.32,
+      "end": 2.56,
+      "confidence": 1,
+      "punctuated_word": "is"
+    },
+    {
+      "word": "john",
+      "start": 2.56,
+      "end": 3.06,
+      "confidence": 0.99853516,
+      "punctuated_word": "John."
+    },
+    {
+      "word": "my",
+      "start": 3.84,
+      "end": 4.08,
+      "confidence": 1,
+      "punctuated_word": "My"
+    },
+    {
+      "word": "phone",
+      "start": 4.08,
+      "end": 4.3199997,
+      "confidence": 1,
+      "punctuated_word": "phone"
+    },
+    {
+      "word": "number",
+      "start": 4.3199997,
+      "end": 4.64,
+      "confidence": 1,
+      "punctuated_word": "number"
+    },
+    {
+      "word": "is",
+      "start": 4.64,
+      "end": 5.12,
+      "confidence": 1,
+      "punctuated_word": "is"
+    },
+    {
+      "word": "813-567-980",
+      "start": 5.12,
+      "end": 5.62,
+      "confidence": 0.9711914,
+      "punctuated_word": "813-567-980,"
+    },
+    {
+      "word": "and",
+      "start": 9.65825,
+      "end": 9.81825,
+      "confidence": 1,
+      "punctuated_word": "and"
+    },
+    {
+      "word": "i",
+      "start": 9.81825,
+      "end": 9.97825,
+      "confidence": 0.99902344,
+      "punctuated_word": "I"
+    },
+    {
+      "word": "live",
+      "start": 9.97825,
+      "end": 10.37825,
+      "confidence": 1,
+      "punctuated_word": "live"
+    },
+    {
+      "word": "in",
+      "start": 10.37825,
+      "end": 10.53825,
+      "confidence": 1,
+      "punctuated_word": "in"
+    },
+    {
+      "word": "lakeview",
+      "start": 10.53825,
+      "end": 11.0182495,
+      "confidence": 0.9875488,
+      "punctuated_word": "Lakeview"
+    },
+    {
+      "word": "oaks",
+      "start": 11.0182495,
+      "end": 11.5182495,
+      "confidence": 0.9482422,
+      "punctuated_word": "Oaks."
+    }
+  ],
+  "redactionTimestamps": [
+    {
+      "word": "hey",
+      "start": 0.88,
+      "end": 1.38,
+      "confidence": 0.9975139,
+      "punctuated_word": "Hey."
+    },
+    {
+      "word": "my",
+      "start": 1.92,
+      "end": 2.08,
+      "confidence": 0.9998361,
+      "punctuated_word": "My"
+    },
+    {
+      "word": "name",
+      "start": 2.08,
+      "end": 2.32,
+      "confidence": 0.9999691,
+      "punctuated_word": "name"
+    },
+    {
+      "word": "is",
+      "start": 2.32,
+      "end": 2.56,
+      "confidence": 0.9997719,
+      "punctuated_word": "is"
+    },
+    {
+      "word": "[NAME_GIVEN_1]",
+      "start": 2.56,
+      "end": 3.06,
+      "confidence": 0.99796087,
+      "punctuated_word": "[NAME_GIVEN_1]."
+    },
+    {
+      "word": "my",
+      "start": 3.84,
+      "end": 4.08,
+      "confidence": 0.9998611,
+      "punctuated_word": "My"
+    },
+    {
+      "word": "phone",
+      "start": 4.08,
+      "end": 4.3199997,
+      "confidence": 0.99990916,
+      "punctuated_word": "phone"
+    },
+    {
+      "word": "number",
+      "start": 4.3199997,
+      "end": 4.64,
+      "confidence": 0.9998641,
+      "punctuated_word": "number"
+    },
+    {
+      "word": "is",
+      "start": 4.64,
+      "end": 5.12,
+      "confidence": 0.99960035,
+      "punctuated_word": "is"
+    },
+    {
+      "word": "[PHONE_NUMBER_1]",
+      "start": 5.12,
+      "end": 5.62,
+      "confidence": 0.9708236,
+      "punctuated_word": "[PHONE_NUMBER_1],"
+    },
+    {
+      "word": "and",
+      "start": 9.65825,
+      "end": 9.81825,
+      "confidence": 0.9993315,
+      "punctuated_word": "and"
+    },
+    {
+      "word": "i",
+      "start": 9.81825,
+      "end": 9.97825,
+      "confidence": 0.9989467,
+      "punctuated_word": "I"
+    },
+    {
+      "word": "live",
+      "start": 9.97825,
+      "end": 10.37825,
+      "confidence": 0.99954516,
+      "punctuated_word": "live"
+    },
+    {
+      "word": "in",
+      "start": 10.37825,
+      "end": 10.53825,
+      "confidence": 0.999493,
+      "punctuated_word": "in"
+    },
+    {
+      "word": "[LOCATION_CITY_1]",
+      "start": 10.53825,
+      "end": 11.598249,
+      "confidence": 0.9679171,
+      "punctuated_word": "[LOCATION_CITY_1]."
+    }
+  ],
+  "redacted": "Hey. My name is [NAME_GIVEN_1]. My phone number is [PHONE_NUMBER_1], and I live in [LOCATION_CITY_1].",
+  "sentiment": "neutral",
+  "sentimentScore": 0.15625,
+  "entities": [
+    {
+      "label": "NAME",
+      "value": "John",
+      "confidence": 0.99999416,
+      "start_word": 4,
+      "end_word": 5
+    },
+    {
+      "label": "CARDINAL",
+      "value": "813",
+      "confidence": 1,
+      "start_word": 9,
+      "end_word": 10
+    },
+    {
+      "label": "CREDIT_CARD",
+      "value": "813",
+      "confidence": 0.95585805,
+      "start_word": 9,
+      "end_word": 10
+    },
+    {
+      "label": "CARDINAL",
+      "value": "567",
+      "confidence": 1,
+      "start_word": 9,
+      "end_word": 10
+    },
+    {
+      "label": "CREDIT_CARD",
+      "value": "567",
+      "confidence": 0.99227625,
+      "start_word": 9,
+      "end_word": 10
+    },
+    {
+      "label": "CARDINAL",
+      "value": "980",
+      "confidence": 1,
+      "start_word": 9,
+      "end_word": 10
+    },
+    {
+      "label": "CREDIT_CARD",
+      "value": "980",
+      "confidence": 0.48145714,
+      "start_word": 9,
+      "end_word": 10
+    },
+    {
+      "label": "LOCATION",
+      "value": "Lakeview Oaks",
+      "confidence": 0.98546124,
+      "start_word": 14,
+      "end_word": 16
+    }
+  ]
+}
