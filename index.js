@@ -1,5 +1,5 @@
 const { audioProcess } = require('./lib/transcription');
-const { redactSensitiveInfo } = require("./lib/audioRedaction");
+const { redactSensitiveInfo } = require('./lib/audioRedaction');
 const path = require('path');
 const fs = require('fs-extra');
 require('dotenv').config();
@@ -22,7 +22,7 @@ async function processAndRedactAudio() {
     await fs.writeFile(outputPathJson, jsonContent, 'utf-8');
     console.dir({ analysis: [results] }, { depth: null });
     if (results && results.redactionTimestamps) {
-      redactSensitiveInfo(results.redactionTimestamps,audioPath, outputPathAudio);
+      redactSensitiveInfo(results.redactionTimestamps, audioPath, outputPathAudio);
     }
   } catch (error) {
     console.error('Error in main execution:', error);
