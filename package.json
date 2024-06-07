@@ -24,6 +24,7 @@
     "@deepgram/sdk": "^3.3.3",
     "@google-cloud/text-to-speech": "^5.0.2",
     "@grpc/grpc-js": "^1.9.14",
+    "axios": "^1.7.2",
     "bent": "^7.3.12",
     "debug": "^4.3.4",
     "dotenv": "^16.4.5",
@@ -38,7 +39,7 @@
   },
   "devDependencies": {
     "config": "^3.3.10",
-    "eslint": "^8.56.0",
+    "eslint": "^8.57.0",
     "eslint-plugin-promise": "^6.1.1",
     "nyc": "^15.1.0",
     "pino": "^8.17.0",
