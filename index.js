@@ -1,9 +1,7 @@
-const AudioProcessor = require('./lib/utils');
-const DeepgramTranscriber = require('./lib/deepgramTranscriber');
-const DeepgramRedactor = require('./lib/deepgramRedactor');
+const { getTranscription } = require('./lib/transcribe');
+const { getRedactedAudio } = require('./lib/redact');
 
 module.exports = {
-  AudioProcessor,
-  DeepgramTranscriber,
-  DeepgramRedactor
+  getTranscription,
+  getRedactedAudio
 };
