@@ -136,3 +136,6 @@ redacts/
 # cache
 
 .DS_Store
+
+#tmp dir
+/outs
