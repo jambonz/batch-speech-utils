@@ -1,4 +1,3 @@
-// app.js
 const createAudioService = require('..');
 
 const audioService = createAudioService();
@@ -14,7 +13,7 @@ async function runExample() {
   try {
 
     const transcriptionResults = await audioService.transcribe(credentials, audioFilePath);
-    // console.log('Transcription Results:', transcriptionResults);
+    console.log('Transcription Results:', transcriptionResults);
     const timestampsToRedact = transcriptionResults.redactionTimestamps;
 
     // eslint-disable-next-line max-len
