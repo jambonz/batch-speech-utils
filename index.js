@@ -1,7 +1,14 @@
-const { getTranscription } = require('./lib/transcribe');
-const { getRedactedAudio } = require('./lib/redact');
+const noopLogger = {
+  info: () => {},
+  debug: () => {},
+  error: () => {}
+};
 
-module.exports = {
-  getTranscription,
-  getRedactedAudio
+module.exports = (logger) => {
+  logger = logger || noopLogger;
+
+  return {
+    transcribe: require('./lib/transcribe').bind(null, logger),
+    redact: require('./lib/redact').bind(null, logger)
+  };
 };
