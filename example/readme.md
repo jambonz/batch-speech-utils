@@ -8,7 +8,7 @@ Run the script with the following command-line arguments:
 - format: The format of the recording file (e.g., mp3).
 
 ``` bash
-node downloadAndRedact.js <callId> <date> <format>
+node example-jambones-api.js <callId> <date> <format>
 
 #example
 node example-jambones-api.js 8e9####b-f##8-4bdf-85a6-####### 2024/06/06 mp3
