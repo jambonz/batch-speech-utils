@@ -22,3 +22,5 @@ export DEEPGRAM_API_KEY=your_deepgram_api_key
 export TEMP_FOLDER=optional_temp_folder_path
 ```
 
+### Output:
+This will generate a redacted version of the original recording.
