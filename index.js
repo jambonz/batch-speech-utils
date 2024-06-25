@@ -9,6 +9,7 @@ module.exports = (logger) => {
 
   return {
     transcribe: require('./lib/transcribe').bind(null, logger),
-    redact: require('./lib/redact').bind(null, logger)
+    redact: require('./lib/redact').bind(null, logger),
+    transcript_json : require('./lib/schema/transciption-template')
   };
 };
