@@ -1,0 +1,128 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "parties": {
+      "type": "object",
+      "properties": {
+        "N": {
+          "type": "integer",
+          "description": "Number of parties"
+        },
+        "from": {
+          "type": "string",
+          "description": "Identifier for the initiating party"
+        },
+        "to": {
+          "type": "string",
+          "description": "Identifier for the receiving party"
+        }
+      },
+    "duration": {
+      "type": "integer",
+      "description": "Duration of recording in milliseconds"
+    },
+    "url": {
+      "type": "string",
+      "description": "Where recording is located",
+      "format": "uri"
+    },
+    "conversation": {
+      "type": "object",
+      "properties": {
+        "as heard": {
+          "type": "object",
+          "properties": {
+            "full transcript": {
+              "type": "string",
+              "description": "Transcript as heard during the conversation"
+            },
+            "confidence": {
+              "type": "string",
+              "description": "confidence score for transcription as heard"
+            },
+            "transcription vendor": {
+              "type": "string",
+              "description": "transcription vendor realtime"
+            },
+            "timestamps": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "word": {
+                    "type": "string",
+                    "description": "Word in the as heard transcript"
+                  },
+                  "startTime": {
+                    "type": "string",
+                    "description": "Start time of the word",
+                    "format": "date-time"
+                  },
+                  "endTime": {
+                    "type": "string",
+                    "description": "End time of the word",
+                    "format": "date-time"
+                  },
+                  "confidence": {
+                    "type": "number",
+                    "description": "Confidence level of the word"
+                  }
+                },
+                "required": ["word", "startTime", "endTime", "confidence"]
+              }
+            }
+          },
+          "required": ["full transcript", "timestamps"]
+        },
+        "after the fact": {
+          "type": "object",
+          "properties": {
+            "full transcript": {
+              "type": "string",
+              "description": "Transcript generated after analyzing the conversation"
+            },
+            "confidence": {
+              "type": "string",
+              "description": "confidence score for transcription after the fact"
+            },
+            "transcription vendor": {
+              "type": "string",
+              "description": "transcription vendor used for after the fact processing"
+            },
+            "timestamps": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "word": {
+                    "type": "string",
+                    "description": "Word in the after the fact transcript"
+                  },
+                  "startTime": {
+                    "type": "string",
+                    "description": "Start time of the word",
+                    "format": "date-time"
+                  },
+                  "endTime": {
+                    "type": "string",
+                    "description": "End time of the word",
+                    "format": "date-time"
+                  },
+                  "confidence": {
+                    "type": "number",
+                    "description": "Confidence level of the word"
+                  }
+                },
+                "required": ["word", "startTime", "endTime", "confidence"]
+              }
+            }
+          },
+          "required": ["full transcript", "timestamps"]
+        }
+      },
+      "required": ["as heard", "after the fact"]
+    }
+  },
+  "required": ["body", "parties", "duration", "url", "conversation"]
+}
