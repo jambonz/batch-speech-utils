@@ -20,6 +20,7 @@ export ACCOUNT_SID=your_account_sid
 export JAMBONZ_API_TOKEN=your_jambonz_api_token
 export DEEPGRAM_API_KEY=your_deepgram_api_key
 export TEMP_FOLDER=optional_temp_folder_path
+export TRACE_ID=call_trace_id
 ```
 
 ### Output:
