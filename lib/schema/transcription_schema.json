@@ -2,127 +2,115 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
   "properties": {
-    "parties": {
-      "type": "object",
-      "properties": {
-        "N": {
-          "type": "integer",
-          "description": "Number of parties"
+    "participants": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["human", "machine"]
+          },
+          "initiatedConversation": {
+            "type": "boolean"
+          },
+          "id": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": ["string", "null"]
+              },
+              "phone": {
+                "type": "string",
+                "pattern": "^\\+\\d{11}$"
+              }
+            },
+            "required": ["phone"]
+          }
         },
-        "from": {
-          "type": "string",
-          "description": "Identifier for the initiating party"
-        },
-        "to": {
-          "type": "string",
-          "description": "Identifier for the receiving party"
-        }
-      },
+        "required": ["type", "initiatedConversation", "id"]
+      }
+    },
     "duration": {
-      "type": "integer",
-      "description": "Duration of recording in milliseconds"
+      "type": "integer"
     },
-    "url": {
-      "type": "string",
-      "description": "Where recording is located",
-      "format": "uri"
-    },
-    "conversation": {
+    "transcript": {
       "type": "object",
       "properties": {
-        "as heard": {
-          "type": "object",
-          "properties": {
-            "full transcript": {
-              "type": "string",
-              "description": "Transcript as heard during the conversation"
-            },
-            "confidence": {
-              "type": "string",
-              "description": "confidence score for transcription as heard"
-            },
-            "transcription vendor": {
-              "type": "string",
-              "description": "transcription vendor realtime"
-            },
-            "timestamps": {
-              "type": "array",
-              "items": {
-                "type": "object",
-                "properties": {
-                  "word": {
-                    "type": "string",
-                    "description": "Word in the as heard transcript"
-                  },
-                  "startTime": {
-                    "type": "string",
-                    "description": "Start time of the word",
-                    "format": "date-time"
-                  },
-                  "endTime": {
-                    "type": "string",
-                    "description": "End time of the word",
-                    "format": "date-time"
-                  },
-                  "confidence": {
-                    "type": "number",
-                    "description": "Confidence level of the word"
-                  }
-                },
-                "required": ["word", "startTime", "endTime", "confidence"]
-              }
-            }
-          },
-          "required": ["full transcript", "timestamps"]
+        "vendor": {
+          "type": "string"
         },
-        "after the fact": {
-          "type": "object",
-          "properties": {
-            "full transcript": {
-              "type": "string",
-              "description": "Transcript generated after analyzing the conversation"
-            },
-            "confidence": {
-              "type": "string",
-              "description": "confidence score for transcription after the fact"
-            },
-            "transcription vendor": {
-              "type": "string",
-              "description": "transcription vendor used for after the fact processing"
-            },
-            "timestamps": {
-              "type": "array",
-              "items": {
-                "type": "object",
-                "properties": {
-                  "word": {
-                    "type": "string",
-                    "description": "Word in the after the fact transcript"
+        "model": {
+          "type": "string"
+        },
+        "channels": {
+          "type": "integer"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "speechEvents": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "timestamp": {
+                "type": "number"
+              },
+              "duration": {
+                "type": "number"
+              },
+              "startTime": {
+                "type": "number"
+              },
+              "endTime": {
+                "type": "number"
+              },
+              "speaker": {
+                "type": "integer"
+              },
+              "transcript": {
+                "type": "string"
+              },
+              "words": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "word": {
+                      "type": "string"
+                    },
+                    "start": {
+                      "type": "number"
+                    },
+                    "end": {
+                      "type": "number"
+                    },
+                    "confidence": {
+                      "type": "number"
+                    }
                   },
-                  "startTime": {
-                    "type": "string",
-                    "description": "Start time of the word",
-                    "format": "date-time"
-                  },
-                  "endTime": {
-                    "type": "string",
-                    "description": "End time of the word",
-                    "format": "date-time"
-                  },
-                  "confidence": {
-                    "type": "number",
-                    "description": "Confidence level of the word"
-                  }
-                },
-                "required": ["word", "startTime", "endTime", "confidence"]
+                  "required": ["word", "start", "end", "confidence"]
+                }
               }
-            }
-          },
-          "required": ["full transcript", "timestamps"]
+            },
+            "required": ["timestamp", "duration", "startTime", "endTime", "speaker", "transcript", "words"]
+          }
+        },
+        "sentiment": {
+          "type": "string",
+          "enum": ["positive", "negative", "neutral"]
+        },
+        "sentimentScore": {
+          "type": "number"
+        },
+        "totalDuration": {
+          "type": "integer"
         }
       },
-      "required": ["as heard", "after the fact"]
+      "required": ["vendor", "model", "channels", "createdAt", "speechEvents", "sentiment", "sentimentScore", "totalDuration"]
     }
   },
-  "required": ["body", "parties", "duration", "url", "conversation"]
+  "required": ["participants", "duration", "transcript"]
 }
