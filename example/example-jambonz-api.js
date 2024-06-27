@@ -31,46 +31,58 @@ async function writeJSONFile(filePath, data) {
 }
 
 function extractJambonzTrace(data, audioService) {
-  const transcriptJson = {
-    parties: { N: 2 },
-    conversation: { 'as heard': {} }
-  };
+  const participants = [];
+  let duration = 0;
+  let uniqueNumbers = new Set();
 
   data.resourceSpans.forEach((resourceSpan) => {
     resourceSpan.instrumentationLibrarySpans.forEach((librarySpan) => {
       librarySpan.spans.forEach((span) => {
         span.attributes.forEach((attribute) => {
-          switch (attribute.key) {
-            case 'from':
-              if (attribute.value) transcriptJson.parties.from = attribute.value.stringValue;
-              break;
-            case 'duration':
-              if (attribute.value) transcriptJson.duration = attribute.value.stringValue;
-              break;
-            case 'to':
-              if (attribute.value) transcriptJson.parties.to = attribute.value.stringValue;
-              break;
-            case 'http.body':
-              if (attribute.value) {
-                const httpBody = JSON.parse(attribute.value.stringValue);
-                if (httpBody.speech && httpBody.speech.alternatives && httpBody.speech.alternatives.length > 0) {
-                  const alternative = httpBody.speech.alternatives[0];
-                  transcriptJson.conversation['as heard']['full transcript'] = alternative.transcript;
-                  transcriptJson.conversation['as heard']['confidence'] = alternative.confidence;
-                  transcriptJson.conversation['as heard']['transcription vendor'] = httpBody.speech.vendor.name;
-                  // eslint-disable-next-line max-len
-                  transcriptJson.conversation['as heard'].timestamps = httpBody.speech.vendor.evt.channel.alternatives[0].words;
+          if (attribute.value && attribute.value.stringValue) {
+            switch (attribute.key) {
+              case 'from':
+                // Ensure we're only adding unique 'from' numbers
+                if (!uniqueNumbers.has(attribute.value.stringValue)) {
+                  uniqueNumbers.add(attribute.value.stringValue);
+                  participants.push({
+                    'type': 'human',
+                    'initiatedConversation': true,
+                    'id': {
+                      'name': null,  // Assuming there's no name information available
+                      'phone': attribute.value.stringValue
+                    }
+                  });
                 }
-              }
-              break;
+                break;
+              case 'duration':
+                // Parse the duration as an integer if it's a string
+                duration += parseInt(attribute.value.stringValue || "0", 10);
+                break;
+              case 'to':
+                // Conditionally add 'to' participants if they represent the machine
+                if (!uniqueNumbers.has(attribute.value.stringValue)) {
+                  uniqueNumbers.add(attribute.value.stringValue);
+                  participants.push({
+                    'type': 'machine',
+                    'initiatedConversation': false,
+                    'id': {
+                      'name': 'jambonz.one',  // Use the provided audioService if relevant
+                      'phone': attribute.value.stringValue
+                    }
+                  });
+                }
+                break;
+            }
           }
         });
       });
     });
   });
 
-  return transcriptJson;
+  return {'participants': participants, 'duration': duration};
 }
+
 
 async function fetchJambonzTrace() {
   const url = `${JAMBONZ_API_BASE_URL}/Accounts/${process.env.ACCOUNT_SID}/RecentCalls/trace/${process.env.TRACE_ID}`;
@@ -156,12 +168,10 @@ async function processAndRedactFile(audioFilePath, outputFilePath) {
     });
 
     const jambonzTrace = await fetchJambonzTrace();
-    jambonzTrace.conversation['after the fact'] = {
-      'full transcript': transcriptionResults.transcript,
-      'confidence': transcriptionResults.confidence,
-      'transcription vendor': transcriptionResults.vendor,
-      'timestamps': timestampsToRedact
-    };
+
+    const {'redactionTimestamps':_, ...transcript} = transcriptionResults;
+    jambonzTrace.transcript = transcript;
+
 
     await writeJSONFile(`${process.env.OUTPUT_PATH}/transcription.json`, jambonzTrace);
 
