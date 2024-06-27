@@ -27,204 +27,237 @@ export TRACE_ID=call_trace_id
 #### Sample response :
 ```json
 {
-  "parties": {
-    "N": 2,
-    "from": "+18137978145",
-    "to": "+15086908019"
-  },
-  "conversation": {
-    "as heard": {
-      "full transcript": "testing the trace id",
-      "confidence": 0.98625356,
-      "transcription vendor": "deepgram",
-      "timestamps": [
-        {
-          "word": "testing",
-          "start": 6.17,
-          "end": 6.67,
-          "confidence": 0.98625356
-        },
-        {
-          "word": "the",
-          "start": 6.73,
-          "end": 7.13,
-          "confidence": 0.99873596
-        },
-        {
-          "word": "trace",
-          "start": 7.13,
-          "end": 7.45,
-          "confidence": 0.8694936
-        },
-        {
-          "word": "id",
-          "start": 7.45,
-          "end": 7.73,
-          "confidence": 0.97171736
-        }
-      ]
+  "participants": [
+    {
+      "type": "human",
+      "initiatedConversation": true,
+      "id": {
+        "name": null,
+        "phone": "+18137978145"
+      }
     },
-    "after the fact": {
-      "full transcript": "Please say something, and we will echo it back to you. Testing the trace ID. You said testing the trace ID. The",
-      "confidence": 0.9998342,
-      "transcription vendor": "deepgram",
-      "timestamps": [
-        {
-          "word": "please",
-          "start": 1.28,
-          "end": 1.78,
-          "confidence": 0.72381705,
-          "punctuated_word": "Please"
-        },
-        {
-          "word": "say",
-          "start": 1.8399999,
-          "end": 2.08,
-          "confidence": 0.99993443,
-          "punctuated_word": "say"
-        },
-        {
-          "word": "something",
-          "start": 2.08,
-          "end": 2.58,
-          "confidence": 0.9418999,
-          "punctuated_word": "something,"
-        },
-        {
-          "word": "and",
-          "start": 2.8,
-          "end": 2.96,
-          "confidence": 0.9998994,
-          "punctuated_word": "and"
-        },
-        {
-          "word": "we",
-          "start": 2.96,
-          "end": 3.1999998,
-          "confidence": 0.9999466,
-          "punctuated_word": "we"
-        },
-        {
-          "word": "will",
-          "start": 3.1999998,
-          "end": 3.36,
-          "confidence": 0.9999703,
-          "punctuated_word": "will"
-        },
-        {
-          "word": "echo",
-          "start": 3.36,
-          "end": 3.6799998,
-          "confidence": 0.9999869,
-          "punctuated_word": "echo"
-        },
-        {
-          "word": "it",
-          "start": 3.6799998,
-          "end": 3.84,
-          "confidence": 0.9998846,
-          "punctuated_word": "it"
-        },
-        {
-          "word": "back",
-          "start": 3.84,
-          "end": 4,
-          "confidence": 0.9999819,
-          "punctuated_word": "back"
-        },
-        {
-          "word": "to",
-          "start": 4,
-          "end": 4.16,
-          "confidence": 0.9998343,
-          "punctuated_word": "to"
-        },
-        {
-          "word": "you",
-          "start": 4.16,
-          "end": 4.66,
-          "confidence": 0.9999392,
-          "punctuated_word": "you."
-        },
-        {
-          "word": "testing",
-          "start": 7.314937,
-          "end": 7.794937,
-          "confidence": 0.9992229,
-          "punctuated_word": "Testing"
-        },
-        {
-          "word": "the",
-          "start": 7.794937,
-          "end": 7.9549375,
-          "confidence": 0.9970893,
-          "punctuated_word": "the"
-        },
-        {
-          "word": "trace",
-          "start": 7.9549375,
-          "end": 8.274938,
-          "confidence": 0.99184144,
-          "punctuated_word": "trace"
-        },
-        {
-          "word": "id",
-          "start": 8.274938,
-          "end": 8.774938,
-          "confidence": 0.9883225,
-          "punctuated_word": "ID."
-        },
-        {
-          "word": "you",
-          "start": 9.794937,
-          "end": 10.034937,
-          "confidence": 0.99948525,
-          "punctuated_word": "You"
-        },
-        {
-          "word": "said",
-          "start": 10.034937,
-          "end": 10.534937,
-          "confidence": 0.99984527,
-          "punctuated_word": "said"
-        },
-        {
-          "word": "testing",
-          "start": 10.754937,
-          "end": 11.234938,
-          "confidence": 0.7150886,
-          "punctuated_word": "testing"
-        },
-        {
-          "word": "the",
-          "start": 11.234938,
-          "end": 11.3949375,
-          "confidence": 0.99970514,
-          "punctuated_word": "the"
-        },
-        {
-          "word": "trace",
-          "start": 11.3949375,
-          "end": 11.714937,
-          "confidence": 0.99983966,
-          "punctuated_word": "trace"
-        },
-        {
-          "word": "id",
-          "start": 11.714937,
-          "end": 12.214937,
-          "confidence": 0.9862746,
-          "punctuated_word": "ID."
-        },
-        {
-          "word": "the",
-          "start": 12.434937,
-          "end": 12.934937,
-          "confidence": 0.8898546,
-          "punctuated_word": "The"
-        }
-      ]
+    {
+      "type": "machine",
+      "initiatedConversation": false,
+      "id": {
+        "name": "jambonz.one",
+        "phone": "+15086908019"
+      }
     }
+  ],
+  "duration": 0,
+  "transcript": {
+    "vendor": "deepgram",
+    "model": "nova-2",
+    "channels": 2,
+    "createdAt": "2024-06-27T07:02:04.985Z",
+    "speechEvents": [
+      {
+        "start": 1.36,
+        "end": 4.66,
+        "duration": 3.3,
+        "speaker": 1,
+        "sentence": "Please say something, and we will echo it back to you.",
+        "words": [
+          {
+            "word": "please",
+            "start": 1.36,
+            "end": 1.8399999
+          },
+          {
+            "word": "say",
+            "start": 1.8399999,
+            "end": 2
+          },
+          {
+            "word": "something",
+            "start": 2,
+            "end": 2.5
+          },
+          {
+            "word": "and",
+            "start": 2.72,
+            "end": 3.04
+          },
+          {
+            "word": "we",
+            "start": 3.04,
+            "end": 3.1999998
+          },
+          {
+            "word": "will",
+            "start": 3.1999998,
+            "end": 3.36
+          },
+          {
+            "word": "echo",
+            "start": 3.36,
+            "end": 3.6799998
+          },
+          {
+            "word": "it",
+            "start": 3.6799998,
+            "end": 3.84
+          },
+          {
+            "word": "back",
+            "start": 3.84,
+            "end": 4
+          },
+          {
+            "word": "to",
+            "start": 4,
+            "end": 4.16
+          },
+          {
+            "word": "you",
+            "start": 4.16,
+            "end": 4.66
+          }
+        ]
+      },
+      {
+        "start": 6.24,
+        "end": 7.8599997,
+        "duration": 1.6199997000000002,
+        "speaker": 0,
+        "sentence": "Hey. My name is [NAME_GIVEN_1].",
+        "words": [
+          {
+            "word": "hey",
+            "start": 6.24,
+            "end": 6.72
+          },
+          {
+            "word": "my",
+            "start": 6.72,
+            "end": 6.8799996
+          },
+          {
+            "word": "name",
+            "start": 6.8799996,
+            "end": 7.12
+          },
+          {
+            "word": "is",
+            "start": 7.12,
+            "end": 7.3599997
+          },
+          {
+            "word": "[NAME_GIVEN_1]",
+            "start": 7.3599997,
+            "end": 7.8599997
+          }
+        ]
+      },
+      {
+        "start": 8.934999,
+        "end": 18.158937,
+        "duration": 9.223938000000002,
+        "speaker": 1,
+        "sentence": "You said, hey. My name is [NAME_GIVEN_1]. The confidence score was 1.00. The speech service was provided by [ORGANIZATION_1].",
+        "words": [
+          {
+            "word": "you",
+            "start": 8.934999,
+            "end": 9.255
+          },
+          {
+            "word": "said",
+            "start": 9.255,
+            "end": 9.755
+          },
+          {
+            "word": "hey",
+            "start": 10.055,
+            "end": 10.295
+          },
+          {
+            "word": "my",
+            "start": 10.295,
+            "end": 10.375
+          },
+          {
+            "word": "name",
+            "start": 10.375,
+            "end": 10.695
+          },
+          {
+            "word": "is",
+            "start": 10.695,
+            "end": 10.855
+          },
+          {
+            "word": "[NAME_GIVEN_1]",
+            "start": 10.855,
+            "end": 11.355
+          },
+          {
+            "word": "the",
+            "start": 11.735,
+            "end": 11.895
+          },
+          {
+            "word": "confidence",
+            "start": 11.895,
+            "end": 12.395
+          },
+          {
+            "word": "score",
+            "start": 12.535,
+            "end": 12.855
+          },
+          {
+            "word": "was",
+            "start": 12.855,
+            "end": 13.254999
+          },
+          {
+            "word": "1.00",
+            "start": 13.254999,
+            "end": 13.754999
+          },
+          {
+            "word": "the",
+            "start": 15.498938,
+            "end": 15.738937
+          },
+          {
+            "word": "speech",
+            "start": 15.738937,
+            "end": 16.138937
+          },
+          {
+            "word": "service",
+            "start": 16.138937,
+            "end": 16.618937
+          },
+          {
+            "word": "was",
+            "start": 16.618937,
+            "end": 16.938938
+          },
+          {
+            "word": "provided",
+            "start": 16.938938,
+            "end": 17.418938
+          },
+          {
+            "word": "by",
+            "start": 17.418938,
+            "end": 17.658937
+          },
+          {
+            "word": "[ORGANIZATION_1]",
+            "start": 17.658937,
+            "end": 18.158937
+          }
+        ]
+      }
+    ],
+    "sentiment": "neutral",
+    "sentimentScore": 0.110107421875,
+    "totalDuration": 19224
   }
 }
 ```
