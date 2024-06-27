@@ -1,0 +1,116 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "participants": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["human", "machine"]
+          },
+          "initiatedConversation": {
+            "type": "boolean"
+          },
+          "id": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": ["string", "null"]
+              },
+              "phone": {
+                "type": "string",
+                "pattern": "^\\+\\d{11}$"
+              }
+            },
+            "required": ["phone"]
+          }
+        },
+        "required": ["type", "initiatedConversation", "id"]
+      }
+    },
+    "duration": {
+      "type": "integer"
+    },
+    "transcript": {
+      "type": "object",
+      "properties": {
+        "vendor": {
+          "type": "string"
+        },
+        "model": {
+          "type": "string"
+        },
+        "channels": {
+          "type": "integer"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "speechEvents": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "timestamp": {
+                "type": "number"
+              },
+              "duration": {
+                "type": "number"
+              },
+              "startTime": {
+                "type": "number"
+              },
+              "endTime": {
+                "type": "number"
+              },
+              "speaker": {
+                "type": "integer"
+              },
+              "transcript": {
+                "type": "string"
+              },
+              "words": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "word": {
+                      "type": "string"
+                    },
+                    "start": {
+                      "type": "number"
+                    },
+                    "end": {
+                      "type": "number"
+                    },
+                    "confidence": {
+                      "type": "number"
+                    }
+                  },
+                  "required": ["word", "start", "end", "confidence"]
+                }
+              }
+            },
+            "required": ["timestamp", "duration", "startTime", "endTime", "speaker", "transcript", "words"]
+          }
+        },
+        "sentiment": {
+          "type": "string",
+          "enum": ["positive", "negative", "neutral"]
+        },
+        "sentimentScore": {
+          "type": "number"
+        },
+        "totalDuration": {
+          "type": "integer"
+        }
+      },
+      "required": ["vendor", "model", "channels", "createdAt", "speechEvents", "sentiment", "sentimentScore", "totalDuration"]
+    }
+  },
+  "required": ["participants", "duration", "transcript"]
+}
