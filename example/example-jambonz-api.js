@@ -33,7 +33,7 @@ async function writeJSONFile(filePath, data) {
 function extractJambonzTrace(data, audioService) {
   const participants = [];
   let duration = 0;
-  let uniqueNumbers = new Set();
+  const uniqueNumbers = new Set();
 
   data.resourceSpans.forEach((resourceSpan) => {
     resourceSpan.instrumentationLibrarySpans.forEach((librarySpan) => {
@@ -57,7 +57,7 @@ function extractJambonzTrace(data, audioService) {
                 break;
               case 'duration':
                 // Parse the duration as an integer if it's a string
-                duration += parseInt(attribute.value.stringValue || "0", 10);
+                duration += parseInt(attribute.value.stringValue || '0', 10);
                 break;
               case 'to':
                 // Conditionally add 'to' participants if they represent the machine
@@ -83,9 +83,36 @@ function extractJambonzTrace(data, audioService) {
   return {'participants': participants, 'duration': duration};
 }
 
+async function fetchCallDetails(callId) {
+  const headers = {
+    'Authorization': `Bearer ${process.env.JAMBONZ_API_TOKEN}`,
+    'Accept': '*/*',
+  };
+  const url = `${JAMBONZ_API_BASE_URL}/Accounts/${process.env.ACCOUNT_SID}/RecentCalls?page=1&count=25&filter=${callId}`;
+  try {
+    const { statusCode, body } = await request(url, { headers });
+    if (statusCode !== 200) {
+      throw new Error(`Request failed with status code: ${statusCode}`);
+    }
+    var data = await body.json();
+    data = data.data[0];
+    const response = {
+      'call_start' : data.answered_at,
+      'duration_ms':data.duration * 1000,
+      'trace_id': data.trace_id,
+      'recording_url' : data.recording_url
+    };
+    // await writeJSONFile('response_call_details.json', targetCall);
+    console.log('Call details has been received');
+    return response;
+  } catch (error) {
+    console.error('Error fetching data:', error);
+    throw error;
+  }
+}
 
-async function fetchJambonzTrace() {
-  const url = `${JAMBONZ_API_BASE_URL}/Accounts/${process.env.ACCOUNT_SID}/RecentCalls/trace/${process.env.TRACE_ID}`;
+async function fetchJambonzTrace(trace_id) {
+  const url = `${JAMBONZ_API_BASE_URL}/Accounts/${process.env.ACCOUNT_SID}/RecentCalls/trace/${trace_id}`;
   const headers = {
     'Authorization': `Bearer ${process.env.JAMBONZ_API_TOKEN}`,
     'Accept': '*/*',
@@ -97,17 +124,17 @@ async function fetchJambonzTrace() {
       throw new Error(`Request failed with status code: ${statusCode}`);
     }
     const data = await body.json();
-    await writeJSONFile('response.json', data);
-    console.log('Data has been received');
-    const jsonData = await readJSONFile('./response.json');
+    await writeJSONFile('trace.json', data);
+    console.log('Trace received');
+    const jsonData = await readJSONFile('./trace.json');
     return extractJambonzTrace(jsonData, audioService);
   } catch (error) {
-    console.error('Error fetching data:', error);
+    console.error('Error fetching trace data:', error);
     throw error;
   }
 }
 
-async function downloadFile(url, tempFilePath, finalFilePath, token) {
+async function downloadFile(url, tempFilePath, finalFilePath, token, callDetails) {
   try {
     const { statusCode, body } = await request(url, {
       method: 'GET',
@@ -131,7 +158,7 @@ async function downloadFile(url, tempFilePath, finalFilePath, token) {
           console.error('Pipeline failed:', err);
         } else {
           try {
-            await processAndRedactFile(tempFilePath, finalFilePath);
+            await processAndRedactFile(tempFilePath, finalFilePath, callDetails);
           } catch (processingError) {
             console.error('Error processing file:', processingError);
           } finally {
@@ -153,7 +180,7 @@ async function downloadFile(url, tempFilePath, finalFilePath, token) {
 }
 
 
-async function processAndRedactFile(audioFilePath, outputFilePath) {
+async function processAndRedactFile(audioFilePath, outputFilePath, callDetails) {
   const credentials = { 'vendor': 'deepgram', 'apiKey': process.env.DEEPGRAM_API_KEY };
 
   try {
@@ -167,12 +194,25 @@ async function processAndRedactFile(audioFilePath, outputFilePath) {
       audioOutputPath: outputFilePath
     });
 
-    const jambonzTrace = await fetchJambonzTrace();
-
+    const jambonzTrace = await fetchJambonzTrace(callDetails.trace_id);
     const {'redactionTimestamps':_, ...transcript} = transcriptionResults;
+    jambonzTrace.duration = callDetails.duration_ms;
+    jambonzTrace.call_start = callDetails.call_start;
     jambonzTrace.transcript = transcript;
 
+    const callStartMillis = new Date(callDetails.call_start).getTime();
+    jambonzTrace.transcript.speechEvents = jambonzTrace.transcript.speechEvents.map(event => {
+      const startTimestamp = new Date(callStartMillis + event.start * 1000).toISOString();
+      // const endTimestamp = new Date(callStartMillis + event.end * 1000).toISOString();
 
+      return {
+        spokenAt: startTimestamp,
+        ...event
+
+        // start: startTimestamp,
+        // end: endTimestamp,
+      };
+    });
     await writeJSONFile(`${process.env.OUTPUT_PATH}/transcription.json`, jambonzTrace);
 
     console.log('File redacted and saved successfully.');
@@ -185,17 +225,22 @@ async function processAndRedactFile(audioFilePath, outputFilePath) {
 // Main execution
 async function main() {
   try {
-    const [,, callId, date, format] = process.argv;
-    if (!callId || !date || !format) {
-      throw new Error('Missing required command line arguments. Usage: node app.js <callId> <date> <format>');
+    const [,, callId] = process.argv;
+    if (!callId) {
+      throw new Error('Missing required command line arguments. Usage: node app.js <callId>');
     }
-    const url = `${JAMBONZ_API_BASE_URL}/Accounts/${process.env.ACCOUNT_SID}/RecentCalls/${callId}/record/${date}/${format}`;
+    const callDetails = await fetchCallDetails(callId);
+    const dateFormat = callDetails.recording_url.split('record/')[1];
+    const url = `${JAMBONZ_API_BASE_URL}/Accounts/${process.env.ACCOUNT_SID}/RecentCalls/${callId}/record/${dateFormat}`;
+    //
+    //
+    // // console.log(callDetails);
     const finalFilePath = path.resolve(__dirname, path.join(process.env.OUTPUT_PATH, 'redacted_audio.wav'));
     const tempFolder = process.env.TEMP_FOLDER || os.tmpdir();
     const tempFilePath = path.join(tempFolder, 'tempDownloadedFile.mp3');
-
-
-    await downloadFile(url, tempFilePath, finalFilePath, process.env.JAMBONZ_API_TOKEN);
+    // //
+    // //
+    await downloadFile(url, tempFilePath, finalFilePath, process.env.JAMBONZ_API_TOKEN, callDetails);
   } catch (error) {
     console.error('Error in main process:', error);
     process.exit(1);
