@@ -32,8 +32,8 @@ export TRACE_ID=call_trace_id
       "type": "human",
       "initiatedConversation": true,
       "id": {
-        "name": Suraj63,
-        "phone": "+1813765333"
+        "name": null,
+        "phone": "Suraj63"
       }
     },
     {
@@ -41,2024 +41,1732 @@ export TRACE_ID=call_trace_id
       "initiatedConversation": false,
       "id": {
         "name": "jambonz.one",
-        "phone": "+15139999999"
+        "phone": "app-9ea8bd83-eaef-4f22-a1a2-150a10a5483a"
       }
     }
   ],
+  "duration": 161000,
+  "call_start": "2024-07-19T03:01:23.644Z",
   "transcript": {
     "vendor": "deepgram",
     "model": "nova-2",
     "channels": 2,
-    "createdAt": "2024-07-08T19:18:28.905Z",
+    "createdAt": "2024-07-19T06:30:26.456Z",
     "speechEvents": [
       {
-        "start": 11.815,
-        "end": 12.315,
-        "duration": 0.5,
-        "speaker": 1,
-        "sentence": "Hello?",
-        "words": [
-          {
-            "word": "hello",
-            "start": 11.815,
-            "end": 12.315
-          }
-        ]
-      },
-      {
-        "start": 14.125,
-        "end": 18.44,
-        "duration": 4.315000000000001,
+        "spokenAt": "2024-07-19T03:01:44.704Z",
+        "start": 21.060001,
+        "end": 25.08,
+        "duration": 4.0199989999999985,
         "speaker": 0,
         "sentence": "Hello, and thank you for calling [ORGANIZATION_1]. My name is [NAME_GIVEN_1]. How can I assist you today?",
         "words": [
           {
             "word": "hello",
-            "start": 14.125,
-            "end": 14.365
+            "start": 21.060001,
+            "end": 21.54
           },
           {
             "word": "and",
-            "start": 14.365,
-            "end": 14.684999
+            "start": 21.54,
+            "end": 21.7
           },
           {
             "word": "thank",
-            "start": 14.684999,
-            "end": 14.845
+            "start": 21.7,
+            "end": 21.94
           },
           {
             "word": "you",
-            "start": 14.845,
-            "end": 15.005
+            "start": 21.94,
+            "end": 22.1
           },
           {
             "word": "for",
-            "start": 15.005,
-            "end": 15.165
+            "start": 22.1,
+            "end": 22.18
           },
           {
             "word": "calling",
-            "start": 15.165,
-            "end": 15.565001
+            "start": 22.18,
+            "end": 22.58
           },
           {
             "word": "[ORGANIZATION_1]",
-            "start": 15.565001,
-            "end": 16.065
+            "start": 22.58,
+            "end": 23.060001
           },
           {
             "word": "my",
-            "start": 16.125,
-            "end": 16.285
+            "start": 23.060001,
+            "end": 23.14
           },
           {
             "word": "name",
-            "start": 16.285,
-            "end": 16.445
+            "start": 23.14,
+            "end": 23.3
           },
           {
             "word": "is",
-            "start": 16.445,
-            "end": 16.685
+            "start": 23.3,
+            "end": 23.46
           },
           {
             "word": "[NAME_GIVEN_1]",
-            "start": 16.685,
-            "end": 17.005001
+            "start": 23.46,
+            "end": 23.7
           },
           {
             "word": "how",
-            "start": 17.005001,
-            "end": 17.244999
+            "start": 23.7,
+            "end": 23.86
           },
           {
             "word": "can",
-            "start": 17.244999,
-            "end": 17.404999
+            "start": 23.86,
+            "end": 24.02
           },
           {
             "word": "i",
-            "start": 17.404999,
-            "end": 17.485
+            "start": 24.02,
+            "end": 24.18
           },
           {
             "word": "assist",
-            "start": 17.485,
-            "end": 17.805
+            "start": 24.18,
+            "end": 24.5
           },
           {
             "word": "you",
-            "start": 17.805,
-            "end": 18.045
+            "start": 24.5,
+            "end": 24.58
           },
           {
             "word": "today",
-            "start": 18.045,
-            "end": 18.44
+            "start": 24.58,
+            "end": 25.08
           }
         ]
       },
       {
-        "start": 18.93,
-        "end": 21.43,
+        "spokenAt": "2024-07-19T03:01:50.369Z",
+        "start": 26.725,
+        "end": 29.225,
         "duration": 2.5,
         "speaker": 1,
         "sentence": "Hi. I have a question about my recent order.",
         "words": [
           {
             "word": "hi",
-            "start": 18.93,
-            "end": 19.25
+            "start": 26.725,
+            "end": 27.045
           },
           {
             "word": "i",
-            "start": 19.25,
-            "end": 19.330002
+            "start": 27.045,
+            "end": 27.205
           },
           {
             "word": "have",
-            "start": 19.330002,
-            "end": 19.57
+            "start": 27.205,
+            "end": 27.445
           },
           {
             "word": "a",
-            "start": 19.57,
-            "end": 19.650002
+            "start": 27.445,
+            "end": 27.525
           },
           {
             "word": "question",
-            "start": 19.650002,
-            "end": 20.130001
+            "start": 27.525,
+            "end": 27.925
           },
           {
             "word": "about",
-            "start": 20.130001,
-            "end": 20.37
+            "start": 27.925,
+            "end": 28.165
           },
           {
             "word": "my",
-            "start": 20.37,
-            "end": 20.53
+            "start": 28.165,
+            "end": 28.325
           },
           {
             "word": "recent",
-            "start": 20.53,
-            "end": 20.93
+            "start": 28.325,
+            "end": 28.725
           },
           {
             "word": "order",
-            "start": 20.93,
-            "end": 21.43
+            "start": 28.725,
+            "end": 29.225
           }
         ]
       },
       {
-        "start": 22.04,
-        "end": 28.055,
-        "duration": 6.015000000000001,
+        "spokenAt": "2024-07-19T03:01:53.039Z",
+        "start": 29.395,
+        "end": 32.775,
+        "duration": 3.379999999999999,
         "speaker": 0,
-        "sentence": "I'd be I'd be happy to help you with that. Can you please tell me your full name and order number so that I can look up",
+        "sentence": "I'd be happy to help you. Can I please have your full name and order number?",
         "words": [
           {
             "word": "i'd",
-            "start": 22.04,
-            "end": 22.28
+            "start": 29.395,
+            "end": 29.635
           },
           {
             "word": "be",
-            "start": 22.28,
-            "end": 22.52
-          },
-          {
-            "word": "i'd",
-            "start": 22.52,
-            "end": 22.92
-          },
-          {
-            "word": "be",
-            "start": 22.92,
-            "end": 23.08
+            "start": 29.635,
+            "end": 29.795
           },
           {
             "word": "happy",
-            "start": 23.08,
-            "end": 23.32
+            "start": 29.795,
+            "end": 30.035
           },
           {
             "word": "to",
-            "start": 23.32,
-            "end": 23.400002
+            "start": 30.035,
+            "end": 30.115
           },
           {
             "word": "help",
-            "start": 23.400002,
-            "end": 23.64
+            "start": 30.115,
+            "end": 30.275
           },
           {
             "word": "you",
-            "start": 23.64,
-            "end": 23.8
-          },
-          {
-            "word": "with",
-            "start": 23.8,
-            "end": 23.880001
-          },
-          {
-            "word": "that",
-            "start": 23.880001,
-            "end": 24.12
+            "start": 30.275,
+            "end": 30.515
           },
           {
             "word": "can",
-            "start": 24.12,
-            "end": 24.28
+            "start": 30.515,
+            "end": 30.675
           },
           {
-            "word": "you",
-            "start": 24.28,
-            "end": 24.44
+            "word": "i",
+            "start": 30.675,
+            "end": 30.835
           },
           {
             "word": "please",
-            "start": 24.44,
-            "end": 24.76
+            "start": 30.835,
+            "end": 31.075
           },
           {
-            "word": "tell",
-            "start": 24.76,
-            "end": 24.92
-          },
-          {
-            "word": "me",
-            "start": 24.92,
-            "end": 25.08
+            "word": "have",
+            "start": 31.075,
+            "end": 31.235
           },
           {
             "word": "your",
-            "start": 25.08,
-            "end": 25.24
+            "start": 31.235,
+            "end": 31.395
           },
           {
             "word": "full",
-            "start": 25.24,
-            "end": 25.48
+            "start": 31.395,
+            "end": 31.635
           },
           {
             "word": "name",
-            "start": 25.48,
-            "end": 25.720001
+            "start": 31.635,
+            "end": 31.795
           },
           {
             "word": "and",
-            "start": 25.720001,
-            "end": 25.960001
+            "start": 31.795,
+            "end": 32.035
           },
           {
             "word": "order",
-            "start": 25.960001,
-            "end": 26.28
+            "start": 32.035,
+            "end": 32.275
           },
           {
             "word": "number",
-            "start": 26.28,
-            "end": 26.6
-          },
-          {
-            "word": "so",
-            "start": 26.6,
-            "end": 26.84
-          },
-          {
-            "word": "that",
-            "start": 26.84,
-            "end": 27
-          },
-          {
-            "word": "i",
-            "start": 27,
-            "end": 27.08
-          },
-          {
-            "word": "can",
-            "start": 27.08,
-            "end": 27.240002
-          },
-          {
-            "word": "look",
-            "start": 27.240002,
-            "end": 27.555
-          },
-          {
-            "word": "up",
-            "start": 27.555,
-            "end": 28.055
+            "start": 32.275,
+            "end": 32.775
           }
         ]
       },
       {
-        "start": 29.205,
-        "end": 31.445,
-        "duration": 2.240000000000002,
+        "spokenAt": "2024-07-19T03:01:59.294Z",
+        "start": 35.65,
+        "end": 42.055,
+        "duration": 6.405000000000001,
         "speaker": 1,
-        "sentence": "Sure. My name is [NAME_1], and",
+        "sentence": "Sure. My name is [NAME_1], and my order number is [NUMERICAL_PII_1].",
         "words": [
           {
             "word": "sure",
-            "start": 29.205,
-            "end": 29.705
+            "start": 35.65,
+            "end": 36.15
           },
           {
             "word": "my",
-            "start": 29.845001,
-            "end": 30.005001
+            "start": 36.690002,
+            "end": 36.93
           },
           {
             "word": "name",
-            "start": 30.005001,
-            "end": 30.245
+            "start": 36.93,
+            "end": 37.09
           },
           {
             "word": "is",
-            "start": 30.245,
-            "end": 30.485
+            "start": 37.09,
+            "end": 37.33
           },
           {
             "word": "[NAME_1]",
-            "start": 30.485,
-            "end": 31.205
+            "start": 37.33,
+            "end": 37.97
           },
           {
             "word": "and",
-            "start": 31.205,
-            "end": 31.445
-          }
-        ]
-      },
-      {
-        "start": 31.315,
-        "end": 31.565,
-        "duration": 0.25,
-        "speaker": 0,
-        "sentence": "some",
-        "words": [
-          {
-            "word": "some",
-            "start": 31.315,
-            "end": 31.565
-          }
-        ]
-      },
-      {
-        "start": 31.445,
-        "end": 31.605,
-        "duration": 0.16000000000000014,
-        "speaker": 1,
-        "sentence": "my",
-        "words": [
+            "start": 37.97,
+            "end": 38.21
+          },
           {
             "word": "my",
-            "start": 31.445,
-            "end": 31.605
-          }
-        ]
-      },
-      {
-        "start": 31.565,
-        "end": 32.065002,
-        "duration": 0.5000019999999985,
-        "speaker": 0,
-        "sentence": "information?",
-        "words": [
-          {
-            "word": "information",
-            "start": 31.565,
-            "end": 32.065002
-          }
-        ]
-      },
-      {
-        "start": 31.605,
-        "end": 35.42,
-        "duration": 3.8150000000000013,
-        "speaker": 1,
-        "sentence": "order number is [NUMERICAL_PII_1].",
-        "words": [
+            "start": 38.21,
+            "end": 38.370003
+          },
           {
             "word": "order",
-            "start": 31.605,
-            "end": 31.845001
+            "start": 38.370003,
+            "end": 38.61
           },
           {
             "word": "number",
-            "start": 31.845001,
-            "end": 32.085
+            "start": 38.61,
+            "end": 38.850002
           },
           {
             "word": "is",
-            "start": 32.085,
-            "end": 32.325
+            "start": 38.850002,
+            "end": 39.010002
           },
           {
             "word": "[NUMERICAL_PII_1]",
-            "start": 32.325,
-            "end": 35.42
+            "start": 39.010002,
+            "end": 42.055
           }
         ]
       },
       {
-        "start": 36.25,
-        "end": 44.35,
-        "duration": 8.100000000000001,
+        "spokenAt": "2024-07-19T03:02:06.799Z",
+        "start": 43.155,
+        "end": 50.454998,
+        "duration": 7.299998000000002,
         "speaker": 0,
-        "sentence": "Thank you, [NAME_GIVEN_2]. For verification purposes, could you also provide me with the last 4 digits of your credit card used for the purchase?",
+        "sentence": "Thank you. For verification purposes, could you also provide me with the last four digits of your credit card used for the purchase?",
         "words": [
           {
             "word": "thank",
-            "start": 36.25,
-            "end": 36.489998
+            "start": 43.155,
+            "end": 43.395
           },
           {
             "word": "you",
-            "start": 36.489998,
-            "end": 36.81
-          },
-          {
-            "word": "[NAME_GIVEN_2]",
-            "start": 36.81,
-            "end": 37.21
+            "start": 43.395,
+            "end": 43.895
           },
           {
             "word": "for",
-            "start": 37.45,
-            "end": 37.77
+            "start": 44.035,
+            "end": 44.434998
           },
           {
             "word": "verification",
-            "start": 37.77,
-            "end": 38.27
+            "start": 44.434998,
+            "end": 44.934998
           },
           {
             "word": "purposes",
-            "start": 38.329998,
-            "end": 38.809998
+            "start": 45.074997,
+            "end": 45.574997
           },
           {
             "word": "could",
-            "start": 38.809998,
-            "end": 39.05
+            "start": 45.635,
+            "end": 45.875
           },
           {
             "word": "you",
-            "start": 39.05,
-            "end": 39.29
+            "start": 45.875,
+            "end": 46.035
           },
           {
             "word": "also",
-            "start": 39.29,
-            "end": 39.69
+            "start": 46.035,
+            "end": 46.274998
           },
           {
             "word": "provide",
-            "start": 39.69,
-            "end": 40.17
+            "start": 46.274998,
+            "end": 46.594997
           },
           {
             "word": "me",
-            "start": 40.17,
-            "end": 40.65
+            "start": 46.594997,
+            "end": 46.754997
           },
           {
             "word": "with",
-            "start": 40.65,
-            "end": 40.809998
+            "start": 46.754997,
+            "end": 46.995
           },
           {
             "word": "the",
-            "start": 40.809998,
-            "end": 41.05
+            "start": 46.995,
+            "end": 47.074997
           },
           {
             "word": "last",
-            "start": 41.05,
-            "end": 41.29
+            "start": 47.074997,
+            "end": 47.395
           },
           {
-            "word": "4",
-            "start": 41.29,
-            "end": 41.61
+            "word": "four",
+            "start": 47.395,
+            "end": 47.635
           },
           {
             "word": "digits",
-            "start": 41.61,
-            "end": 42.11
+            "start": 47.635,
+            "end": 48.135
           },
           {
             "word": "of",
-            "start": 42.25,
-            "end": 42.489998
+            "start": 48.355,
+            "end": 48.515
           },
           {
             "word": "your",
-            "start": 42.489998,
-            "end": 42.73
+            "start": 48.515,
+            "end": 48.675
           },
           {
             "word": "credit",
-            "start": 42.73,
-            "end": 43.05
+            "start": 48.675,
+            "end": 49.074997
           },
           {
             "word": "card",
-            "start": 43.05,
-            "end": 43.29
+            "start": 49.074997,
+            "end": 49.394997
           },
           {
             "word": "used",
-            "start": 43.29,
-            "end": 43.53
+            "start": 49.394997,
+            "end": 49.635
           },
           {
             "word": "for",
-            "start": 43.53,
-            "end": 43.69
+            "start": 49.635,
+            "end": 49.795
           },
           {
             "word": "the",
-            "start": 43.69,
-            "end": 43.85
+            "start": 49.795,
+            "end": 49.954998
           },
           {
             "word": "purchase",
-            "start": 43.85,
-            "end": 44.35
+            "start": 49.954998,
+            "end": 50.454998
           }
         ]
       },
       {
-        "start": 44.955,
-        "end": 47.295,
-        "duration": 2.3400000000000034,
+        "spokenAt": "2024-07-19T03:02:15.113Z",
+        "start": 51.469997,
+        "end": 53.25,
+        "duration": 1.7800030000000007,
         "speaker": 1,
-        "sentence": "For sure. It's 9876.",
+        "sentence": "Of course. It's 9876.",
         "words": [
           {
-            "word": "for",
-            "start": 44.955,
-            "end": 45.275
+            "word": "of",
+            "start": 51.469997,
+            "end": 51.71
           },
           {
-            "word": "sure",
-            "start": 45.275,
-            "end": 45.775
+            "word": "course",
+            "start": 51.71,
+            "end": 52.03
           },
           {
             "word": "it's",
-            "start": 45.915,
-            "end": 46.415
+            "start": 52.03,
+            "end": 52.53
           },
           {
             "word": "9876",
-            "start": 46.795,
-            "end": 47.295
+            "start": 52.75,
+            "end": 53.25
           }
         ]
       },
       {
-        "start": 49.515,
-        "end": 60.88,
-        "duration": 11.365000000000002,
+        "spokenAt": "2024-07-19T03:02:19.344Z",
+        "start": 55.7,
+        "end": 66.285,
+        "duration": 10.584999999999994,
         "speaker": 0,
-        "sentence": "Thank you. Please give me a moment to pull up your details. Okay. I see your order here. It looks like you purchased a smartwatch on [DATE_1]. How can I assist you with this order?",
+        "sentence": "Thank you. Please give me a moment to pull up your details. Okay. I see your order here. It looks like you purchased the smartwatch on [DATE_1]. How can I assist you with that?",
         "words": [
           {
             "word": "thank",
-            "start": 49.515,
-            "end": 49.755
+            "start": 55.7,
+            "end": 55.94
           },
           {
             "word": "you",
-            "start": 49.755,
-            "end": 50.155
+            "start": 55.94,
+            "end": 56.34
           },
           {
             "word": "please",
-            "start": 50.155,
-            "end": 50.555
+            "start": 56.34,
+            "end": 56.66
           },
           {
             "word": "give",
-            "start": 50.555,
-            "end": 50.795
+            "start": 56.66,
+            "end": 56.82
           },
           {
             "word": "me",
-            "start": 50.795,
-            "end": 51.035
+            "start": 56.82,
+            "end": 56.94
           },
           {
             "word": "a",
-            "start": 51.035,
-            "end": 51.115
+            "start": 56.94,
+            "end": 57.059998
           },
           {
             "word": "moment",
-            "start": 51.115,
-            "end": 51.435
+            "start": 57.059998,
+            "end": 57.46
           },
           {
             "word": "to",
-            "start": 51.435,
-            "end": 51.675
+            "start": 57.46,
+            "end": 57.7
           },
           {
             "word": "pull",
-            "start": 51.675,
-            "end": 51.835
+            "start": 57.7,
+            "end": 57.86
           },
           {
             "word": "up",
-            "start": 51.835,
-            "end": 51.995
+            "start": 57.86,
+            "end": 58.02
           },
           {
             "word": "your",
-            "start": 51.995,
-            "end": 52.155
+            "start": 58.02,
+            "end": 58.18
           },
           {
             "word": "details",
-            "start": 52.155,
-            "end": 52.655
+            "start": 58.18,
+            "end": 58.68
           },
           {
             "word": "okay",
-            "start": 54.54,
-            "end": 54.780003
+            "start": 60.105003,
+            "end": 60.345
           },
           {
             "word": "i",
-            "start": 54.780003,
-            "end": 54.940002
+            "start": 60.345,
+            "end": 60.505
           },
           {
             "word": "see",
-            "start": 54.940002,
-            "end": 55.02
+            "start": 60.505,
+            "end": 60.745003
           },
           {
             "word": "your",
-            "start": 55.02,
-            "end": 55.260002
+            "start": 60.745003,
+            "end": 60.905003
           },
           {
             "word": "order",
-            "start": 55.260002,
-            "end": 55.5
+            "start": 60.905003,
+            "end": 61.145
           },
           {
             "word": "here",
-            "start": 55.5,
-            "end": 55.9
+            "start": 61.145,
+            "end": 61.305
           },
           {
             "word": "it",
-            "start": 55.9,
-            "end": 56.06
+            "start": 61.305,
+            "end": 61.465
           },
           {
             "word": "looks",
-            "start": 56.06,
-            "end": 56.22
+            "start": 61.465,
+            "end": 61.705
           },
           {
             "word": "like",
-            "start": 56.22,
-            "end": 56.46
+            "start": 61.705,
+            "end": 61.785
           },
           {
             "word": "you",
-            "start": 56.46,
-            "end": 56.620003
+            "start": 61.785,
+            "end": 62.025
           },
           {
             "word": "purchased",
-            "start": 56.620003,
-            "end": 57.100002
+            "start": 62.025,
+            "end": 62.505
           },
           {
-            "word": "a",
-            "start": 57.100002,
-            "end": 57.420002
+            "word": "the",
+            "start": 62.505,
+            "end": 62.665
           },
           {
             "word": "smartwatch",
-            "start": 57.420002,
-            "end": 57.920002
+            "start": 62.665,
+            "end": 63.165
           },
           {
             "word": "on",
-            "start": 58.06,
-            "end": 58.3
+            "start": 63.305,
+            "end": 63.545002
           },
           {
             "word": "[DATE_1]",
-            "start": 58.3,
-            "end": 59.120003
+            "start": 63.545002,
+            "end": 64.365005
           },
           {
             "word": "how",
-            "start": 59.18,
-            "end": 59.34
+            "start": 64.665,
+            "end": 64.825005
           },
           {
             "word": "can",
-            "start": 59.34,
-            "end": 59.5
+            "start": 64.825005,
+            "end": 65.065
           },
           {
             "word": "i",
-            "start": 59.5,
-            "end": 59.66
+            "start": 65.065,
+            "end": 65.145004
           },
           {
             "word": "assist",
-            "start": 59.66,
-            "end": 59.9
+            "start": 65.145004,
+            "end": 65.465004
           },
           {
             "word": "you",
-            "start": 59.9,
-            "end": 60.06
+            "start": 65.465004,
+            "end": 65.625
           },
           {
             "word": "with",
-            "start": 60.06,
-            "end": 60.22
+            "start": 65.625,
+            "end": 65.785
           },
           {
-            "word": "this",
-            "start": 60.22,
-            "end": 60.38
-          },
-          {
-            "word": "order",
-            "start": 60.38,
-            "end": 60.88
+            "word": "that",
+            "start": 65.785,
+            "end": 66.285
           }
         ]
       },
       {
-        "start": 61.524998,
-        "end": 68.56,
-        "duration": 7.035002000000006,
+        "spokenAt": "2024-07-19T03:02:30.934Z",
+        "start": 67.29,
+        "end": 71.229996,
+        "duration": 3.9399959999999936,
         "speaker": 1,
-        "sentence": "Yeah. I've recently, I I have received the product, but, it's not functioning properly. It seems to be defective.",
+        "sentence": "Yeah. I received the product, but it's not functioning properly. It seems to be defective.",
         "words": [
           {
             "word": "yeah",
-            "start": 61.524998,
-            "end": 61.844997
-          },
-          {
-            "word": "i've",
-            "start": 61.844997,
-            "end": 62.085
-          },
-          {
-            "word": "recently",
-            "start": 62.085,
-            "end": 62.585
+            "start": 67.29,
+            "end": 67.53
           },
           {
             "word": "i",
-            "start": 62.965,
-            "end": 63.26
-          },
-          {
-            "word": "i",
-            "start": 63.34,
-            "end": 63.5
-          },
-          {
-            "word": "have",
-            "start": 63.5,
-            "end": 63.66
+            "start": 67.53,
+            "end": 67.689995
           },
           {
             "word": "received",
-            "start": 63.66,
-            "end": 64.06
+            "start": 67.689995,
+            "end": 68.09
           },
           {
             "word": "the",
-            "start": 64.06,
-            "end": 64.14
+            "start": 68.09,
+            "end": 68.329994
           },
           {
             "word": "product",
-            "start": 64.14,
-            "end": 64.54
+            "start": 68.329994,
+            "end": 68.649994
           },
           {
             "word": "but",
-            "start": 64.54,
-            "end": 65.04
+            "start": 68.649994,
+            "end": 68.81
           },
           {
             "word": "it's",
-            "start": 65.659996,
-            "end": 66.06
+            "start": 68.81,
+            "end": 68.96999
           },
           {
             "word": "not",
-            "start": 66.06,
-            "end": 66.38
+            "start": 68.96999,
+            "end": 69.28999
           },
           {
             "word": "functioning",
-            "start": 66.38,
-            "end": 66.86
+            "start": 69.28999,
+            "end": 69.61
           },
           {
             "word": "properly",
-            "start": 66.86,
-            "end": 67.259995
+            "start": 69.61,
+            "end": 70.009995
           },
           {
             "word": "it",
-            "start": 67.259995,
-            "end": 67.42
+            "start": 70.009995,
+            "end": 70.17
           },
           {
             "word": "seems",
-            "start": 67.42,
-            "end": 67.659996
+            "start": 70.17,
+            "end": 70.409996
           },
           {
             "word": "to",
-            "start": 67.659996,
-            "end": 67.82
+            "start": 70.409996,
+            "end": 70.49
           },
           {
             "word": "be",
-            "start": 67.82,
-            "end": 68.06
+            "start": 70.49,
+            "end": 70.729996
           },
           {
             "word": "defective",
-            "start": 68.06,
-            "end": 68.56
+            "start": 70.729996,
+            "end": 71.229996
           }
         ]
       },
       {
-        "start": 69.645004,
-        "end": 77.13,
-        "duration": 7.484995999999995,
+        "spokenAt": "2024-07-19T03:02:36.964Z",
+        "start": 73.32,
+        "end": 78.46,
+        "duration": 5.140000000000001,
         "speaker": 0,
-        "sentence": "Oh, I'm sorry to hear about that. We can definitely get this sorted out for you. Could you please describe the issue you're experiencing with the product?",
+        "sentence": "I'm sorry to hear that. We can definitely get this sorted for you. Can you describe the issue we are facing?",
         "words": [
           {
-            "word": "oh",
-            "start": 69.645004,
-            "end": 69.885
-          },
-          {
             "word": "i'm",
-            "start": 69.885,
-            "end": 70.045
+            "start": 73.32,
+            "end": 73.56
           },
           {
             "word": "sorry",
-            "start": 70.045,
-            "end": 70.365
+            "start": 73.56,
+            "end": 73.88
           },
           {
             "word": "to",
-            "start": 70.365,
-            "end": 70.525
+            "start": 73.88,
+            "end": 73.96
           },
           {
             "word": "hear",
-            "start": 70.525,
-            "end": 70.685
-          },
-          {
-            "word": "about",
-            "start": 70.685,
-            "end": 70.925
+            "start": 73.96,
+            "end": 74.2
           },
           {
             "word": "that",
-            "start": 70.925,
-            "end": 71.245
+            "start": 74.2,
+            "end": 74.52
           },
           {
             "word": "we",
-            "start": 71.245,
-            "end": 71.405
+            "start": 74.759995,
+            "end": 74.84
           },
           {
             "word": "can",
-            "start": 71.405,
-            "end": 71.565
+            "start": 74.84,
+            "end": 75
           },
           {
             "word": "definitely",
-            "start": 71.565,
-            "end": 72.045
+            "start": 75,
+            "end": 75.5
           },
           {
             "word": "get",
-            "start": 72.045,
-            "end": 72.205
+            "start": 75.56,
+            "end": 75.71999
           },
           {
             "word": "this",
-            "start": 72.205,
-            "end": 72.445
+            "start": 75.71999,
+            "end": 75.96
           },
           {
             "word": "sorted",
-            "start": 72.445,
-            "end": 72.845
-          },
-          {
-            "word": "out",
-            "start": 72.845,
-            "end": 73.085
+            "start": 75.96,
+            "end": 76.35999
           },
           {
             "word": "for",
-            "start": 73.085,
-            "end": 73.245
+            "start": 76.35999,
+            "end": 76.439995
           },
           {
             "word": "you",
-            "start": 73.245,
-            "end": 73.67
+            "start": 76.439995,
+            "end": 76.6
           },
           {
-            "word": "could",
-            "start": 73.67,
-            "end": 73.83
+            "word": "can",
+            "start": 76.6,
+            "end": 76.84
           },
           {
             "word": "you",
-            "start": 73.83,
-            "end": 74.07
-          },
-          {
-            "word": "please",
-            "start": 74.07,
-            "end": 74.31
+            "start": 76.84,
+            "end": 77
           },
           {
             "word": "describe",
-            "start": 74.31,
-            "end": 74.79
+            "start": 77,
+            "end": 77.31999
           },
           {
             "word": "the",
-            "start": 74.79,
-            "end": 74.869995
+            "start": 77.31999,
+            "end": 77.479996
           },
           {
             "word": "issue",
-            "start": 74.869995,
-            "end": 75.189995
+            "start": 77.479996,
+            "end": 77.71999
           },
           {
-            "word": "you're",
-            "start": 75.189995,
-            "end": 75.59
+            "word": "we",
+            "start": 77.71999,
+            "end": 77.799995
           },
           {
-            "word": "experiencing",
-            "start": 75.59,
-            "end": 76.09
+            "word": "are",
+            "start": 77.799995,
+            "end": 77.96
           },
           {
-            "word": "with",
-            "start": 76.31,
-            "end": 76.47
-          },
-          {
-            "word": "the",
-            "start": 76.47,
-            "end": 76.63
-          },
-          {
-            "word": "product",
-            "start": 76.63,
-            "end": 77.13
+            "word": "facing",
+            "start": 77.96,
+            "end": 78.46
           }
         ]
       },
       {
-        "start": 77.795,
-        "end": 83.770004,
-        "duration": 5.975003999999998,
+        "spokenAt": "2024-07-19T03:02:42.589Z",
+        "start": 78.945,
+        "end": 82.805,
+        "duration": 3.8600000000000136,
         "speaker": 1,
-        "sentence": "Yes. The the screen keeps flickering, and sometimes it won't turn on at at all.",
+        "sentence": "Yes. The screen keeps flickering, and sometimes I won't turn on at all.",
         "words": [
           {
             "word": "yes",
-            "start": 77.795,
-            "end": 78.195
+            "start": 78.945,
+            "end": 79.34499
           },
           {
             "word": "the",
-            "start": 78.195,
-            "end": 78.515
-          },
-          {
-            "word": "the",
-            "start": 78.515,
-            "end": 78.835
+            "start": 79.34499,
+            "end": 79.585
           },
           {
             "word": "screen",
-            "start": 78.835,
-            "end": 79.335
+            "start": 79.585,
+            "end": 79.825
           },
           {
             "word": "keeps",
-            "start": 79.75,
-            "end": 79.990005
+            "start": 79.825,
+            "end": 80.145
           },
           {
             "word": "flickering",
-            "start": 79.990005,
-            "end": 80.490005
+            "start": 80.145,
+            "end": 80.625
           },
           {
             "word": "and",
-            "start": 80.55,
-            "end": 80.87
+            "start": 80.625,
+            "end": 80.865
           },
           {
             "word": "sometimes",
-            "start": 80.87,
-            "end": 81.270004
+            "start": 80.865,
+            "end": 81.34499
           },
           {
-            "word": "it",
-            "start": 81.270004,
-            "end": 81.51
+            "word": "i",
+            "start": 81.34499,
+            "end": 81.424995
           },
           {
             "word": "won't",
-            "start": 81.51,
-            "end": 81.75
+            "start": 81.424995,
+            "end": 81.66499
           },
           {
             "word": "turn",
-            "start": 81.75,
-            "end": 82.07
+            "start": 81.66499,
+            "end": 81.905
           },
           {
             "word": "on",
-            "start": 82.07,
-            "end": 82.47
+            "start": 81.905,
+            "end": 82.145
           },
           {
             "word": "at",
-            "start": 82.47,
-            "end": 82.950005
-          },
-          {
-            "word": "at",
-            "start": 82.950005,
-            "end": 83.270004
+            "start": 82.145,
+            "end": 82.305
           },
           {
             "word": "all",
-            "start": 83.270004,
-            "end": 83.770004
+            "start": 82.305,
+            "end": 82.805
           }
         ]
       },
       {
-        "start": 84.655,
-        "end": 92.115,
-        "duration": 7.459999999999994,
+        "spokenAt": "2024-07-19T03:02:48.799Z",
+        "start": 85.15501,
+        "end": 91.009995,
+        "duration": 5.854984999999999,
         "speaker": 0,
-        "sentence": "That sounds frustrating. Let's proceed with the return and replacement. Could you confirm your shipping address for me to arrange the return?",
+        "sentence": "That sounds frustrating. Let's, proceed with the return and replacement. Could you confirm shipping address?",
         "words": [
           {
             "word": "that",
-            "start": 84.655,
-            "end": 84.975
+            "start": 85.15501,
+            "end": 85.395004
           },
           {
             "word": "sounds",
-            "start": 84.975,
-            "end": 85.295
+            "start": 85.395004,
+            "end": 85.795006
           },
           {
             "word": "frustrating",
-            "start": 85.295,
-            "end": 85.795
+            "start": 85.795006,
+            "end": 86.295006
           },
           {
             "word": "let's",
-            "start": 86.174995,
-            "end": 86.494995
+            "start": 86.67,
+            "end": 87.07
           },
           {
             "word": "proceed",
-            "start": 86.494995,
-            "end": 86.814995
+            "start": 87.31,
+            "end": 87.63
           },
           {
             "word": "with",
-            "start": 86.814995,
-            "end": 87.055
+            "start": 87.63,
+            "end": 87.869995
           },
           {
             "word": "the",
-            "start": 87.055,
-            "end": 87.215
+            "start": 87.869995,
+            "end": 88.03
           },
           {
             "word": "return",
-            "start": 87.215,
-            "end": 87.615
+            "start": 88.03,
+            "end": 88.42999
           },
           {
             "word": "and",
-            "start": 87.615,
-            "end": 87.774994
+            "start": 88.42999,
+            "end": 88.59
           },
           {
             "word": "replacement",
-            "start": 87.774994,
-            "end": 88.274994
+            "start": 88.59,
+            "end": 89.09
           },
           {
             "word": "could",
-            "start": 88.41499,
-            "end": 88.655
+            "start": 89.229996,
+            "end": 89.39
           },
           {
             "word": "you",
-            "start": 88.655,
-            "end": 88.975
+            "start": 89.39,
+            "end": 89.63
           },
           {
             "word": "confirm",
-            "start": 88.975,
-            "end": 89.375
-          },
-          {
-            "word": "your",
-            "start": 89.375,
-            "end": 89.615
+            "start": 89.63,
+            "end": 90.03
           },
           {
             "word": "shipping",
-            "start": 89.615,
-            "end": 89.935
+            "start": 90.03,
+            "end": 90.509995
           },
           {
             "word": "address",
-            "start": 89.935,
-            "end": 90.335
-          },
-          {
-            "word": "for",
-            "start": 90.335,
-            "end": 90.494995
-          },
-          {
-            "word": "me",
-            "start": 90.494995,
-            "end": 90.655
-          },
-          {
-            "word": "to",
-            "start": 90.655,
-            "end": 90.975
-          },
-          {
-            "word": "arrange",
-            "start": 90.975,
-            "end": 91.454994
-          },
-          {
-            "word": "the",
-            "start": 91.454994,
-            "end": 91.615
-          },
-          {
-            "word": "return",
-            "start": 91.615,
-            "end": 92.115
+            "start": 90.509995,
+            "end": 91.009995
           }
         ]
       },
       {
-        "start": 92.595,
-        "end": 99.46,
-        "duration": 6.864999999999995,
+        "spokenAt": "2024-07-19T03:02:54.464Z",
+        "start": 90.82,
+        "end": 96.744995,
+        "duration": 5.92499500000001,
         "speaker": 1,
-        "sentence": "Sure. It's [LOCATION_ADDRESS_1]. ZIP code, [LOCATION_ZIP_1].",
+        "sentence": "Sure. It's [LOCATION_ADDRESS_1].",
         "words": [
           {
             "word": "sure",
-            "start": 92.595,
-            "end": 93.095
+            "start": 90.82,
+            "end": 91.21999
           },
           {
             "word": "it's",
-            "start": 93.15501,
-            "end": 93.555
+            "start": 91.21999,
+            "end": 91.53999
           },
           {
             "word": "[LOCATION_ADDRESS_1]",
-            "start": 93.555,
-            "end": 97.175
-          },
-          {
-            "word": "zip",
-            "start": 98.4,
-            "end": 98.64
-          },
-          {
-            "word": "code",
-            "start": 98.64,
-            "end": 98.96
-          },
-          {
-            "word": "[LOCATION_ZIP_1]",
-            "start": 98.96,
-            "end": 99.46
+            "start": 91.53999,
+            "end": 96.744995
           }
         ]
       },
       {
-        "start": 101.785,
-        "end": 115.07,
-        "duration": 13.284999999999997,
+        "spokenAt": "2024-07-19T03:03:03.958Z",
+        "start": 100.314995,
+        "end": 107.88,
+        "duration": 7.565004999999999,
         "speaker": 0,
-        "sentence": "Okay. Thank you, [NAME_GIVEN_2]. We will send you a prepaid return label to your email address on the file, which is [EMAIL_ADDRESS_1]. Is that correct?",
+        "sentence": "Thank you, [NAME_GIVEN_2]. We will send a prepaid return label to your email address on file, which is [EMAIL_ADDRESS_1]. Is",
         "words": [
           {
-            "word": "okay",
-            "start": 101.785,
-            "end": 102.285
-          },
-          {
             "word": "thank",
-            "start": 102.585,
-            "end": 102.905
+            "start": 100.314995,
+            "end": 100.55499
           },
           {
             "word": "you",
-            "start": 102.905,
-            "end": 103.145004
+            "start": 100.55499,
+            "end": 100.795
           },
           {
             "word": "[NAME_GIVEN_2]",
-            "start": 103.145004,
-            "end": 103.645004
+            "start": 100.795,
+            "end": 101.195
           },
           {
             "word": "we",
-            "start": 104.585,
-            "end": 104.825005
+            "start": 101.195,
+            "end": 101.435
           },
           {
             "word": "will",
-            "start": 104.825005,
-            "end": 105.065
+            "start": 101.435,
+            "end": 101.59499
           },
           {
             "word": "send",
-            "start": 105.065,
-            "end": 105.305
-          },
-          {
-            "word": "you",
-            "start": 105.305,
-            "end": 105.625
+            "start": 101.59499,
+            "end": 101.755
           },
           {
             "word": "a",
-            "start": 105.625,
-            "end": 105.785
+            "start": 101.755,
+            "end": 101.835
           },
           {
             "word": "prepaid",
-            "start": 105.785,
-            "end": 106.285
+            "start": 101.835,
+            "end": 102.335
           },
           {
             "word": "return",
-            "start": 107.145004,
-            "end": 107.545
+            "start": 102.55499,
+            "end": 102.875
           },
           {
             "word": "label",
-            "start": 107.545,
-            "end": 107.865
+            "start": 102.875,
+            "end": 103.19499
           },
           {
             "word": "to",
-            "start": 107.865,
-            "end": 108.025
+            "start": 103.19499,
+            "end": 103.274994
           },
           {
             "word": "your",
-            "start": 108.025,
-            "end": 108.265
+            "start": 103.274994,
+            "end": 103.515
           },
           {
             "word": "email",
-            "start": 108.265,
-            "end": 108.665
+            "start": 103.515,
+            "end": 103.835
           },
           {
             "word": "address",
-            "start": 108.665,
-            "end": 108.985
+            "start": 103.835,
+            "end": 104.075
           },
           {
             "word": "on",
-            "start": 108.985,
-            "end": 109.145004
-          },
-          {
-            "word": "the",
-            "start": 109.145004,
-            "end": 109.305
+            "start": 104.075,
+            "end": 104.28
           },
           {
             "word": "file",
-            "start": 109.305,
-            "end": 109.77
+            "start": 104.28,
+            "end": 104.52
           },
           {
             "word": "which",
-            "start": 110.009995,
-            "end": 110.17
+            "start": 104.52,
+            "end": 104.76
           },
           {
             "word": "is",
-            "start": 110.17,
-            "end": 110.67
+            "start": 104.76,
+            "end": 104.92
           },
           {
             "word": "[EMAIL_ADDRESS_1]",
-            "start": 110.89,
-            "end": 111.39
+            "start": 104.92,
+            "end": 105.42
           },
           {
             "word": "is",
-            "start": 114.25,
-            "end": 114.409996
-          },
-          {
-            "word": "that",
-            "start": 114.409996,
-            "end": 114.57
-          },
-          {
-            "word": "correct",
-            "start": 114.57,
-            "end": 115.07
+            "start": 107.72,
+            "end": 107.88
           }
         ]
       },
       {
-        "start": 115.625,
-        "end": 116.57,
-        "duration": 0.9449999999999932,
+        "spokenAt": "2024-07-19T03:03:11.443Z",
+        "start": 107.799995,
+        "end": 108.119995,
+        "duration": 0.3200000000000074,
         "speaker": 1,
-        "sentence": "Yes. That's correct.",
+        "sentence": "Yes.",
         "words": [
           {
             "word": "yes",
-            "start": 115.625,
-            "end": 115.945
-          },
+            "start": 107.799995,
+            "end": 108.119995
+          }
+        ]
+      },
+      {
+        "spokenAt": "2024-07-19T03:03:11.524Z",
+        "start": 107.88,
+        "end": 108.54,
+        "duration": 0.6600000000000108,
+        "speaker": 0,
+        "sentence": "that correct?",
+        "words": [
           {
-            "word": "that's",
-            "start": 115.945,
-            "end": 116.185
+            "word": "that",
+            "start": 107.88,
+            "end": 108.04
           },
           {
             "word": "correct",
-            "start": 116.185,
-            "end": 116.57
+            "start": 108.04,
+            "end": 108.54
           }
         ]
       },
       {
-        "start": 118.075,
-        "end": 136.785,
-        "duration": 18.709999999999994,
+        "spokenAt": "2024-07-19T03:03:11.763Z",
+        "start": 108.119995,
+        "end": 108.85999,
+        "duration": 0.7399949999999933,
+        "speaker": 1,
+        "sentence": "That's correct.",
+        "words": [
+          {
+            "word": "that's",
+            "start": 108.119995,
+            "end": 108.35999
+          },
+          {
+            "word": "correct",
+            "start": 108.35999,
+            "end": 108.85999
+          }
+        ]
+      },
+      {
+        "spokenAt": "2024-07-19T03:03:15.189Z",
+        "start": 111.545006,
+        "end": 127.06,
+        "duration": 15.514994000000002,
         "speaker": 0,
-        "sentence": "Great. Once you receive the return label, please send the defective product back to us. As soon as we receive it, we will ship out a replacement to your address at [LOCATION_ADDRESS_2]. You'll receive an email address with the tracking information.",
+        "sentence": "Great. Once you receive the return label, please send the defective product back to us. As soon as we receive it, we will ship out a replacement to your address, which I'm reconfirming as [LOCATION_ADDRESS_1].",
         "words": [
           {
             "word": "great",
-            "start": 118.075,
-            "end": 118.395
+            "start": 111.545006,
+            "end": 111.865005
           },
           {
             "word": "once",
-            "start": 118.395,
-            "end": 118.795
+            "start": 111.865005,
+            "end": 112.105
           },
           {
             "word": "you",
-            "start": 118.795,
-            "end": 119.295
+            "start": 112.105,
+            "end": 112.265
           },
           {
             "word": "receive",
-            "start": 120.235,
-            "end": 120.555
+            "start": 112.265,
+            "end": 112.585
           },
           {
             "word": "the",
-            "start": 120.555,
-            "end": 120.715
+            "start": 112.585,
+            "end": 112.745
           },
           {
             "word": "return",
-            "start": 120.715,
-            "end": 121.034996
+            "start": 112.745,
+            "end": 113.065
           },
           {
             "word": "label",
-            "start": 121.034996,
-            "end": 121.534996
+            "start": 113.065,
+            "end": 113.465004
           },
           {
             "word": "please",
-            "start": 121.835,
-            "end": 122.075
+            "start": 113.705,
+            "end": 113.945
           },
           {
             "word": "send",
-            "start": 122.075,
-            "end": 122.315
+            "start": 113.945,
+            "end": 114.265
           },
           {
             "word": "the",
-            "start": 122.315,
-            "end": 122.475
+            "start": 114.265,
+            "end": 114.505005
           },
           {
             "word": "defective",
-            "start": 122.475,
-            "end": 122.975
+            "start": 114.505005,
+            "end": 114.985
           },
           {
             "word": "product",
-            "start": 123.034996,
-            "end": 123.354996
+            "start": 114.985,
+            "end": 115.385
           },
           {
             "word": "back",
-            "start": 123.354996,
-            "end": 123.595
+            "start": 115.385,
+            "end": 115.545
           },
           {
             "word": "to",
-            "start": 123.595,
-            "end": 123.674995
+            "start": 115.545,
+            "end": 115.705
           },
           {
             "word": "us",
-            "start": 123.674995,
-            "end": 124.075
+            "start": 115.705,
+            "end": 116.105
           },
           {
             "word": "as",
-            "start": 124.075,
-            "end": 124.235
+            "start": 116.105,
+            "end": 116.265
           },
           {
             "word": "soon",
-            "start": 124.235,
-            "end": 124.395
+            "start": 116.265,
+            "end": 116.425
           },
           {
             "word": "as",
-            "start": 124.395,
-            "end": 124.555
+            "start": 116.425,
+            "end": 116.505005
           },
           {
             "word": "we",
-            "start": 124.555,
-            "end": 124.715
+            "start": 116.505005,
+            "end": 116.665
           },
           {
             "word": "receive",
-            "start": 124.715,
-            "end": 125.034996
+            "start": 116.665,
+            "end": 116.985
           },
           {
             "word": "it",
-            "start": 125.034996,
-            "end": 125.275
+            "start": 116.985,
+            "end": 117.145004
           },
           {
             "word": "we",
-            "start": 125.275,
-            "end": 125.354996
+            "start": 117.145004,
+            "end": 117.305
           },
           {
             "word": "will",
-            "start": 125.354996,
-            "end": 125.66
+            "start": 117.305,
+            "end": 117.465004
           },
           {
             "word": "ship",
-            "start": 125.66,
-            "end": 125.82001
+            "start": 117.465004,
+            "end": 117.705
           },
           {
             "word": "out",
-            "start": 125.82001,
-            "end": 125.98
+            "start": 117.705,
+            "end": 117.865005
           },
           {
             "word": "a",
-            "start": 125.98,
-            "end": 126.14001
+            "start": 117.865005,
+            "end": 118.025
           },
           {
             "word": "replacement",
-            "start": 126.14001,
-            "end": 126.64001
+            "start": 118.025,
+            "end": 118.525
           },
           {
             "word": "to",
-            "start": 126.78001,
-            "end": 127.020004
+            "start": 118.585,
+            "end": 118.905
           },
           {
             "word": "your",
-            "start": 127.020004,
-            "end": 127.26
+            "start": 118.905,
+            "end": 119.225
           },
           {
             "word": "address",
-            "start": 127.26,
-            "end": 127.66
+            "start": 119.225,
+            "end": 119.725
           },
           {
-            "word": "at",
-            "start": 127.66,
-            "end": 128.16
+            "word": "which",
+            "start": 120,
+            "end": 120.24
           },
           {
-            "word": "[LOCATION_ADDRESS_2]",
-            "start": 128.38,
-            "end": 133.2
+            "word": "i'm",
+            "start": 120.24,
+            "end": 120.32
           },
           {
-            "word": "you'll",
-            "start": 134.045,
-            "end": 134.36499
+            "word": "reconfirming",
+            "start": 120.32,
+            "end": 120.82
           },
           {
-            "word": "receive",
-            "start": 134.36499,
-            "end": 134.605
+            "word": "as",
+            "start": 121.439995,
+            "end": 121.939995
           },
           {
-            "word": "an",
-            "start": 134.605,
-            "end": 134.845
-          },
-          {
-            "word": "email",
-            "start": 134.845,
-            "end": 135.165
-          },
-          {
-            "word": "address",
-            "start": 135.165,
-            "end": 135.565
-          },
-          {
-            "word": "with",
-            "start": 135.565,
-            "end": 135.805
-          },
-          {
-            "word": "the",
-            "start": 135.805,
-            "end": 135.885
-          },
-          {
-            "word": "tracking",
-            "start": 135.885,
-            "end": 136.285
-          },
-          {
-            "word": "information",
-            "start": 136.285,
-            "end": 136.785
+            "word": "[LOCATION_ADDRESS_1]",
+            "start": 122,
+            "end": 127.06
           }
         ]
       },
       {
-        "start": 137.48,
-        "end": 141.26,
-        "duration": 3.780000000000001,
+        "spokenAt": "2024-07-19T03:03:31.989Z",
+        "start": 128.345,
+        "end": 133.965,
+        "duration": 5.6200000000000045,
         "speaker": 1,
-        "sentence": "Thank you very much. How long, will the entire process take?",
+        "sentence": "Yes. Thank you very much. How long will it, how long will the entire process take?",
         "words": [
           {
+            "word": "yes",
+            "start": 128.345,
+            "end": 128.845
+          },
+          {
             "word": "thank",
-            "start": 137.48,
-            "end": 137.8
+            "start": 129.225,
+            "end": 129.465
           },
           {
             "word": "you",
-            "start": 137.8,
-            "end": 137.95999
+            "start": 129.465,
+            "end": 129.625
           },
           {
             "word": "very",
-            "start": 137.95999,
-            "end": 138.12
+            "start": 129.625,
+            "end": 129.865
           },
           {
             "word": "much",
-            "start": 138.12,
-            "end": 138.51999
+            "start": 129.865,
+            "end": 130.265
           },
           {
             "word": "how",
-            "start": 138.51999,
-            "end": 138.84
+            "start": 130.905,
+            "end": 131.065
           },
           {
             "word": "long",
-            "start": 138.84,
-            "end": 139.23999
+            "start": 131.065,
+            "end": 131.225
           },
           {
             "word": "will",
-            "start": 139.64,
-            "end": 139.87999
+            "start": 131.225,
+            "end": 131.38501
+          },
+          {
+            "word": "it",
+            "start": 131.38501,
+            "end": 131.705
+          },
+          {
+            "word": "how",
+            "start": 131.945,
+            "end": 132.185
+          },
+          {
+            "word": "long",
+            "start": 132.185,
+            "end": 132.345
+          },
+          {
+            "word": "will",
+            "start": 132.345,
+            "end": 132.585
           },
           {
             "word": "the",
-            "start": 139.87999,
-            "end": 140.04
+            "start": 132.585,
+            "end": 132.745
           },
           {
             "word": "entire",
-            "start": 140.04,
-            "end": 140.36
+            "start": 132.745,
+            "end": 133.065
           },
           {
             "word": "process",
-            "start": 140.36,
-            "end": 140.76
+            "start": 133.065,
+            "end": 133.465
           },
           {
             "word": "take",
-            "start": 140.76,
-            "end": 141.26
+            "start": 133.465,
+            "end": 133.965
           }
         ]
       },
       {
-        "start": 142.37,
-        "end": 150.79,
-        "duration": 8.419999999999987,
+        "spokenAt": "2024-07-19T03:03:39.944Z",
+        "start": 136.3,
+        "end": 141.84001,
+        "duration": 5.540009999999995,
         "speaker": 0,
-        "sentence": "Once we receive the, defective product, the replacement should arrive within [DURATION_1]. You'll be notified via email throughout the process.",
+        "sentence": "Once we receive the defective product, the replacement should arrive within [DURATION_1].",
         "words": [
           {
             "word": "once",
-            "start": 142.37,
-            "end": 142.61
+            "start": 136.3,
+            "end": 136.54001
           },
           {
             "word": "we",
-            "start": 142.61,
-            "end": 142.76999
+            "start": 136.54001,
+            "end": 136.78001
           },
           {
             "word": "receive",
-            "start": 142.76999,
-            "end": 143.09
+            "start": 136.78001,
+            "end": 137.1
           },
           {
             "word": "the",
-            "start": 143.09,
-            "end": 143.40999
+            "start": 137.1,
+            "end": 137.26001
           },
           {
             "word": "defective",
-            "start": 143.73,
-            "end": 144.20999
+            "start": 137.26001,
+            "end": 137.74
           },
           {
             "word": "product",
-            "start": 144.20999,
-            "end": 144.61
+            "start": 137.74,
+            "end": 138.14001
           },
           {
             "word": "the",
-            "start": 144.61,
-            "end": 144.76999
+            "start": 138.14001,
+            "end": 138.3
           },
           {
             "word": "replacement",
-            "start": 144.76999,
-            "end": 145.26999
+            "start": 138.3,
+            "end": 138.8
           },
           {
             "word": "should",
-            "start": 145.40999,
-            "end": 145.65
+            "start": 138.86,
+            "end": 139.18001
           },
           {
             "word": "arrive",
-            "start": 145.65,
-            "end": 145.89
+            "start": 139.18001,
+            "end": 139.68001
           },
           {
             "word": "within",
-            "start": 145.89,
-            "end": 146.29
+            "start": 139.82,
+            "end": 140.3
           },
           {
             "word": "[DURATION_1]",
-            "start": 146.29,
-            "end": 147.90999
-          },
-          {
-            "word": "you'll",
-            "start": 147.97,
-            "end": 148.29
-          },
-          {
-            "word": "be",
-            "start": 148.29,
-            "end": 148.45
-          },
-          {
-            "word": "notified",
-            "start": 148.45,
-            "end": 148.95
-          },
-          {
-            "word": "via",
-            "start": 149.01,
-            "end": 149.40999
-          },
-          {
-            "word": "email",
-            "start": 149.40999,
-            "end": 149.73
-          },
-          {
-            "word": "throughout",
-            "start": 149.73,
-            "end": 150.12999
-          },
-          {
-            "word": "the",
-            "start": 150.12999,
-            "end": 150.29
-          },
-          {
-            "word": "process",
-            "start": 150.29,
-            "end": 150.79
+            "start": 140.3,
+            "end": 141.84001
           }
         ]
       },
       {
-        "start": 151.36,
-        "end": 153.54001,
-        "duration": 2.1800099999999816,
+        "spokenAt": "2024-07-19T03:03:47.089Z",
+        "start": 143.445,
+        "end": 145.145,
+        "duration": 1.700000000000017,
         "speaker": 1,
-        "sentence": "Oh, perfect. Thank you for your help.",
+        "sentence": "Perfect. Thank you for your help.",
         "words": [
           {
-            "word": "oh",
-            "start": 151.36,
-            "end": 151.68001
-          },
-          {
             "word": "perfect",
-            "start": 151.68001,
-            "end": 152.18001
+            "start": 143.445,
+            "end": 143.925
           },
           {
             "word": "thank",
-            "start": 152.40001,
-            "end": 152.64
+            "start": 143.925,
+            "end": 144.24501
           },
           {
             "word": "you",
-            "start": 152.64,
-            "end": 152.72
+            "start": 144.24501,
+            "end": 144.325
           },
           {
             "word": "for",
-            "start": 152.72,
-            "end": 152.88
+            "start": 144.325,
+            "end": 144.485
           },
           {
             "word": "your",
-            "start": 152.88,
-            "end": 153.04001
+            "start": 144.485,
+            "end": 144.645
           },
           {
             "word": "help",
-            "start": 153.04001,
-            "end": 153.54001
+            "start": 144.645,
+            "end": 145.145
           }
         ]
       },
       {
-        "start": 153.995,
-        "end": 160.655,
-        "duration": 6.659999999999997,
+        "spokenAt": "2024-07-19T03:03:51.999Z",
+        "start": 148.355,
+        "end": 151.315,
+        "duration": 2.960000000000008,
         "speaker": 0,
-        "sentence": "You're welcome, [NAME_GIVEN_2]. If you have any other questions or need further assistance, please don't hesitate to call us back. Have a great day.",
+        "sentence": "You're welcome, [NAME_GIVEN_2]. If you have any other questions, please",
         "words": [
           {
             "word": "you're",
-            "start": 153.995,
-            "end": 154.235
+            "start": 148.355,
+            "end": 148.595
           },
           {
             "word": "welcome",
-            "start": 154.235,
-            "end": 154.715
+            "start": 148.595,
+            "end": 149.095
           },
           {
             "word": "[NAME_GIVEN_2]",
-            "start": 154.715,
-            "end": 155.115
+            "start": 149.155,
+            "end": 149.47499
           },
           {
             "word": "if",
-            "start": 155.115,
-            "end": 155.275
+            "start": 149.47499,
+            "end": 149.715
           },
           {
             "word": "you",
-            "start": 155.275,
-            "end": 155.435
+            "start": 149.715,
+            "end": 149.795
           },
           {
             "word": "have",
-            "start": 155.435,
-            "end": 155.675
+            "start": 149.795,
+            "end": 150.035
           },
           {
             "word": "any",
-            "start": 155.675,
-            "end": 155.915
+            "start": 150.035,
+            "end": 150.275
           },
           {
             "word": "other",
-            "start": 155.915,
-            "end": 156.075
+            "start": 150.275,
+            "end": 150.515
           },
           {
             "word": "questions",
-            "start": 156.075,
-            "end": 156.395
-          },
-          {
-            "word": "or",
-            "start": 156.395,
-            "end": 156.635
-          },
-          {
-            "word": "need",
-            "start": 156.635,
-            "end": 156.955
-          },
-          {
-            "word": "further",
-            "start": 156.955,
-            "end": 157.275
-          },
-          {
-            "word": "assistance",
-            "start": 157.275,
-            "end": 157.755
+            "start": 150.515,
+            "end": 150.995
           },
           {
             "word": "please",
-            "start": 157.755,
-            "end": 157.995
-          },
-          {
-            "word": "don't",
-            "start": 157.995,
-            "end": 158.235
-          },
-          {
-            "word": "hesitate",
-            "start": 158.235,
-            "end": 158.635
-          },
-          {
-            "word": "to",
-            "start": 158.635,
-            "end": 158.795
-          },
-          {
-            "word": "call",
-            "start": 158.795,
-            "end": 159.035
-          },
-          {
-            "word": "us",
-            "start": 159.035,
-            "end": 159.195
-          },
-          {
-            "word": "back",
-            "start": 159.195,
-            "end": 159.595
-          },
-          {
-            "word": "have",
-            "start": 159.595,
-            "end": 159.755
-          },
-          {
-            "word": "a",
-            "start": 159.755,
-            "end": 159.915
-          },
-          {
-            "word": "great",
-            "start": 159.915,
-            "end": 160.155
-          },
-          {
-            "word": "day",
-            "start": 160.155,
-            "end": 160.655
+            "start": 150.995,
+            "end": 151.315
           }
         ]
       },
       {
-        "start": 160.815,
-        "end": 162.035,
-        "duration": 1.2199999999999989,
+        "spokenAt": "2024-07-19T03:03:54.929Z",
+        "start": 151.285,
+        "end": 151.765,
+        "duration": 0.47999999999998977,
         "speaker": 1,
-        "sentence": "You too. Goodbye.",
+        "sentence": "Sure.",
         "words": [
           {
-            "word": "you",
-            "start": 160.815,
-            "end": 161.215
+            "word": "sure",
+            "start": 151.285,
+            "end": 151.765
+          }
+        ]
+      },
+      {
+        "spokenAt": "2024-07-19T03:03:54.959Z",
+        "start": 151.315,
+        "end": 152.055,
+        "duration": 0.7400000000000091,
+        "speaker": 0,
+        "sentence": "reach out.",
+        "words": [
+          {
+            "word": "reach",
+            "start": 151.315,
+            "end": 151.555
           },
           {
-            "word": "too",
-            "start": 161.215,
-            "end": 161.535
+            "word": "out",
+            "start": 151.555,
+            "end": 152.055
+          }
+        ]
+      },
+      {
+        "spokenAt": "2024-07-19T03:03:55.409Z",
+        "start": 151.765,
+        "end": 152.905,
+        "duration": 1.1400000000000148,
+        "speaker": 1,
+        "sentence": "Thank you. Goodbye.",
+        "words": [
+          {
+            "word": "thank",
+            "start": 151.765,
+            "end": 152.085
+          },
+          {
+            "word": "you",
+            "start": 152.085,
+            "end": 152.405
           },
           {
             "word": "goodbye",
-            "start": 161.535,
-            "end": 162.035
+            "start": 152.405,
+            "end": 152.905
           }
         ]
       },
       {
-        "start": 162.78,
-        "end": 163.28,
+        "spokenAt": "2024-07-19T03:03:59.984Z",
+        "start": 156.34,
+        "end": 156.84,
         "duration": 0.5,
         "speaker": 0,
         "sentence": "Goodbye.",
         "words": [
           {
             "word": "goodbye",
-            "start": 162.78,
-            "end": 163.28
+            "start": 156.34,
+            "end": 156.84
           }
         ]
       }
     ],
-    "sentiment": "neutral",
-    "sentimentScore": 0.08050537109375,
-    "totalDuration": 167544
+    "sentiment": "positive",
+    "sentimentScore": 0.38134765625,
+    "totalDuration": 161136
   }
 }
-```
+json```
