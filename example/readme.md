@@ -3,15 +3,14 @@
 
 Run the script with the following command-line arguments:
 
-- callId: The ID of the call to download.
-- date: The date of the call recording. 
-- format: The format of the recording file (e.g., mp3).
+- call_sid: The ID of the call to download.
+
 
 ``` bash
-node example-jambones-api.js <callId> <date> <format>
+node example-jambones-api.js <callId>
 
 #example
-node example-jambones-api.js 8e9####b-f##8-4bdf-85a6-####### 2024/06/06 mp3
+node example-jambones-api.js 8e9####b-f##8-4bdf-85a6-#######
 
 ```
 ### Environment Variables Setup
@@ -20,7 +19,6 @@ export ACCOUNT_SID=your_account_sid
 export JAMBONZ_API_TOKEN=your_jambonz_api_token
 export DEEPGRAM_API_KEY=your_deepgram_api_key
 export TEMP_FOLDER=optional_temp_folder_path
-export TRACE_ID=call_trace_id
 ```
 
 ### Output:
