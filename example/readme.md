@@ -1769,11 +1769,11 @@ export TEMP_FOLDER=optional_temp_folder_path
 }
 ```
 
-### CX-Analysis (WIP):
+### CX-Analysis :
 ```json
 {
-  "startTime": "2024-07-19T03:01:23.644Z",
-  "endTime": "2024-07-19T03:04:04.644Z",
+  "startTime": "2024-08-08T17:57:03.791Z",
+  "endTime": "2024-08-08T17:59:31.791Z",
   "recognizer": "deepgram",
   "turns": [
     {
@@ -1781,280 +1781,160 @@ export TEMP_FOLDER=optional_temp_folder_path
       "response": {
         "asTranscribed": {
           "transcript": "Hi. I have a question about my recent order.",
-          "vendor": "deepgram"
+          "vendor": "deepgram",
+          "confidence": null
         },
         "asHeard": {
           "transcript": "hi I have a question about my recent order",
-          "confidence": 0.9734987616539001
+          "confidence": 0.9675881266593933,
+          "vendor": "google"
         }
       },
-      "follow_up": "I'd be happy to help you. Can I please have your full name and order number?"
+      "follow_up": "I'd be happy to help you with that. Can I please have your full name and order number to look up your information?"
     },
     {
-      "offer": "Hi. I have a question about my recent order.",
-      "response": {
-        "asTranscribed": {
-          "transcript": "I'd be happy to help you. Can I please have your full name and order number?",
-          "vendor": "deepgram"
-        },
-        "asHeard": {
-          "transcript": " I'd be happy to help you can I please have your full name and order number",
-          "confidence": 0.9531590938568115
-        }
-      },
-      "follow_up": "Sure. My name is [NAME_1], and my order number is [NUMERICAL_PII_1]."
-    },
-    {
-      "offer": "I'd be happy to help you. Can I please have your full name and order number?",
+      "offer": "I'd be happy to help you with that. Can I please have your full name and order number to look up your information?",
       "response": {
         "asTranscribed": {
           "transcript": "Sure. My name is [NAME_1], and my order number is [NUMERICAL_PII_1].",
-          "vendor": "deepgram"
+          "vendor": "deepgram",
+          "confidence": null
         },
         "asHeard": {
-          "transcript": " sure my name is John Smith and my order number is 123456789",
-          "confidence": 0.8831360936164856
+          "transcript": "sure my name is John Smith and my order number is 1 2 3 4 5 6 7 8 9",
+          "confidence": 0.8548645973205566,
+          "vendor": "google"
         }
       },
-      "follow_up": "Thank you. For verification purposes, could you also provide me with the last four digits of your credit card used for the purchase?"
+      "follow_up": "Thank you, [NAME_GIVEN_2]. For verification purposes, could you also provide me with the last four digits of the credit card used for the purchase?"
     },
     {
-      "offer": "Sure. My name is [NAME_1], and my order number is [NUMERICAL_PII_1].",
-      "response": {
-        "asTranscribed": {
-          "transcript": "Thank you. For verification purposes, could you also provide me with the last four digits of your credit card used for the purchase?",
-          "vendor": "deepgram"
-        },
-        "asHeard": {
-          "transcript": " thank you for verification purposes could you also provide me with the last four digits of your credit card used for the purchase",
-          "confidence": 0.9808544516563416
-        }
-      },
-      "follow_up": "Of course. It's 9876."
-    },
-    {
-      "offer": "Thank you. For verification purposes, could you also provide me with the last four digits of your credit card used for the purchase?",
+      "offer": "Thank you, [NAME_GIVEN_2]. For verification purposes, could you also provide me with the last four digits of the credit card used for the purchase?",
       "response": {
         "asTranscribed": {
           "transcript": "Of course. It's 9876.",
-          "vendor": "deepgram"
+          "vendor": "deepgram",
+          "confidence": null
         },
         "asHeard": {
-          "transcript": " of course it's 9876",
-          "confidence": 0.8269519209861755
+          "transcript": "of course it's 9876",
+          "confidence": 0.8935980200767517,
+          "vendor": "google"
         }
       },
-      "follow_up": "Thank you. Please give me a moment to pull up your details. Okay. I see your order here. It looks like you purchased the smartwatch on [DATE_1]. How can I assist you with that?"
+      "follow_up": "Thank you. Please give me a moment to pull up your order details. Pause for a few seconds. Okay. I see your order here. It looks like you purchased a smartwatch on [DATE_1]. How can I assist you with this order?"
     },
     {
-      "offer": "Of course. It's 9876.",
+      "offer": "Thank you. Please give me a moment to pull up your order details. Pause for a few seconds. Okay. I see your order here. It looks like you purchased a smartwatch on [DATE_1]. How can I assist you with this order?",
       "response": {
         "asTranscribed": {
-          "transcript": "Thank you. Please give me a moment to pull up your details. Okay. I see your order here. It looks like you purchased the smartwatch on [DATE_1]. How can I assist you with that?",
-          "vendor": "deepgram"
+          "transcript": "I received the product, but it's not functioning properly. It seems to be defective.",
+          "vendor": "deepgram",
+          "confidence": null
         },
         "asHeard": {
-          "transcript": " thank you please give me a moment to pull up your details",
-          "confidence": 0.9891281127929688
+          "transcript": "I received the product but it's not functioning properly it seems to be defective",
+          "confidence": 0.9702370762825012,
+          "vendor": "google"
         }
       },
-      "follow_up": "Yeah. I received the product, but it's not functioning properly. It seems to be defective."
+      "follow_up": "I'm sorry to hear that. We can definitely get this sorted out for you. Could you describe the issue you're experiencing with the product?"
     },
     {
-      "offer": "Thank you. Please give me a moment to pull up your details. Okay. I see your order here. It looks like you purchased the smartwatch on [DATE_1]. How can I assist you with that?",
+      "offer": "I'm sorry to hear that. We can definitely get this sorted out for you. Could you describe the issue you're experiencing with the product?",
       "response": {
         "asTranscribed": {
-          "transcript": "Yeah. I received the product, but it's not functioning properly. It seems to be defective.",
-          "vendor": "deepgram"
+          "transcript": "The screen keeps flickering sometimes, and it won't turn on at all.",
+          "vendor": "deepgram",
+          "confidence": null
         },
         "asHeard": {
-          "transcript": " yeah I received the product but it's not function properly it seems to be defective",
-          "confidence": 0.9271853566169739
+          "transcript": "the screen keeps flickering sometimes and it won't turn on at all",
+          "confidence": 0.9558009505271912,
+          "vendor": "google"
         }
       },
-      "follow_up": "I'm sorry to hear that. We can definitely get this sorted for you. Can you describe the issue we are facing?"
+      "follow_up": "That sounds frustrating. Let's proceed with a return and replacement. Could you confirm your shipping address for me to arrange the return?"
     },
     {
-      "offer": "Yeah. I received the product, but it's not functioning properly. It seems to be defective.",
-      "response": {
-        "asTranscribed": {
-          "transcript": "I'm sorry to hear that. We can definitely get this sorted for you. Can you describe the issue we are facing?",
-          "vendor": "deepgram"
-        },
-        "asHeard": {
-          "transcript": " okay I see your order here it looks like you purchased this Smartwatch on July 1st how can I assist you with that",
-          "confidence": 0.8799465894699097
-        }
-      },
-      "follow_up": "Yes. The screen keeps flickering, and sometimes I won't turn on at all."
-    },
-    {
-      "offer": "I'm sorry to hear that. We can definitely get this sorted for you. Can you describe the issue we are facing?",
-      "response": {
-        "asTranscribed": {
-          "transcript": "Yes. The screen keeps flickering, and sometimes I won't turn on at all.",
-          "vendor": "deepgram"
-        },
-        "asHeard": {
-          "transcript": " I'm sorry to hear that we can definitely get this sorted for you can you describe the issue your facing",
-          "confidence": 0.9006506204605103
-        }
-      },
-      "follow_up": "That sounds frustrating. Let's, proceed with the return and replacement. Could you confirm shipping address?"
-    },
-    {
-      "offer": "Yes. The screen keeps flickering, and sometimes I won't turn on at all.",
-      "response": {
-        "asTranscribed": {
-          "transcript": "That sounds frustrating. Let's, proceed with the return and replacement. Could you confirm shipping address?",
-          "vendor": "deepgram"
-        },
-        "asHeard": {
-          "transcript": " yes the screen keeps licking and sometimes I won't turn on at all",
-          "confidence": 0.937334418296814
-        }
-      },
-      "follow_up": "Sure. It's [LOCATION_ADDRESS_1]."
-    },
-    {
-      "offer": "That sounds frustrating. Let's, proceed with the return and replacement. Could you confirm shipping address?",
+      "offer": "That sounds frustrating. Let's proceed with a return and replacement. Could you confirm your shipping address for me to arrange the return?",
       "response": {
         "asTranscribed": {
           "transcript": "Sure. It's [LOCATION_ADDRESS_1].",
-          "vendor": "deepgram"
+          "vendor": "deepgram",
+          "confidence": null
         },
         "asHeard": {
-          "transcript": " that sounds frustrating let's proceed with the return and replacement could you confirm shipping address",
-          "confidence": 0.9030960202217102
+          "transcript": "sure it's 1 to 3 Maple Street Apartment 4B Springfield Illinois 62704",
+          "confidence": 0.8138220906257629,
+          "vendor": "google"
         }
       },
-      "follow_up": "Thank you, [NAME_GIVEN_2]. We will send a prepaid return label to your email address on file, which is [EMAIL_ADDRESS_1]. Is"
+      "follow_up": "Thank you, [NAME_GIVEN_2]. We will send a prepaid return label to your email address on file, which is [EMAIL_ADDRESS_1]. Is that correct?"
     },
     {
-      "offer": "Sure. It's [LOCATION_ADDRESS_1].",
+      "offer": "Thank you, [NAME_GIVEN_2]. We will send a prepaid return label to your email address on file, which is [EMAIL_ADDRESS_1]. Is that correct?",
       "response": {
         "asTranscribed": {
-          "transcript": "Thank you, [NAME_GIVEN_2]. We will send a prepaid return label to your email address on file, which is [EMAIL_ADDRESS_1]. Is",
-          "vendor": "deepgram"
-        },
-        "asHeard": {
-          "transcript": " sure it's one two three Maple Street Apartment 4B Spring Field Illinois 62704",
-          "confidence": 0.7194310426712036
-        }
-      },
-      "follow_up": "Yes."
-    },
-    {
-      "offer": "Thank you, [NAME_GIVEN_2]. We will send a prepaid return label to your email address on file, which is [EMAIL_ADDRESS_1]. Is",
-      "response": {
-        "asTranscribed": {
-          "transcript": "Yes.",
-          "vendor": "deepgram"
-        },
-        "asHeard": {
-          "transcript": "thank you John we will send a prepaid return label to your email address on file which is John dot Smith at example.com is that correct",
-          "confidence": 0.8666307926177979
-        }
-      },
-      "follow_up": "that correct?"
-    },
-    {
-      "offer": "Yes.",
-      "response": {
-        "asTranscribed": {
-          "transcript": "that correct?",
-          "vendor": "deepgram"
+          "transcript": "Yes. That's correct.",
+          "vendor": "deepgram",
+          "confidence": null
         },
         "asHeard": {
           "transcript": "yes that's correct",
-          "confidence": 0.9237890243530273
+          "confidence": 0.9711934924125671,
+          "vendor": "google"
         }
       },
-      "follow_up": "That's correct."
+      "follow_up": "Great. Once you receive the return label, please send the defective product back to us. As soon as we receive it, we will ship out a replacement to your address at [LOCATION_ADDRESS_1]. You will receive an email with the tracking information."
     },
     {
-      "offer": "that correct?",
+      "offer": "Great. Once you receive the return label, please send the defective product back to us. As soon as we receive it, we will ship out a replacement to your address at [LOCATION_ADDRESS_1]. You will receive an email with the tracking information.",
       "response": {
         "asTranscribed": {
-          "transcript": "That's correct.",
-          "vendor": "deepgram"
+          "transcript": "Thank you very much. How long will the entire process take?",
+          "vendor": "deepgram",
+          "confidence": null
         },
         "asHeard": {
-          "transcript": " great once you receive the return label please send the defective product back to us as soon as we receive it we will ship out a replacement to your address which I'm really confirming as one two three Maple Street Apartment 4B Springfield Illinois 62704",
-          "confidence": 0.8999208211898804
+          "transcript": "thank you very much how long will the entire process take",
+          "confidence": 0.9617440700531006,
+          "vendor": "google"
         }
       },
-      "follow_up": "Great. Once you receive the return label, please send the defective product back to us. As soon as we receive it, we will ship out a replacement to your address, which I'm reconfirming as [LOCATION_ADDRESS_1]."
+      "follow_up": "Once we receive the defective product, the replacement should arrive within [DURATION_1]. You'll be notified via email throughout the process."
     },
     {
-      "offer": "That's correct.",
-      "response": {
-        "asTranscribed": {
-          "transcript": "Great. Once you receive the return label, please send the defective product back to us. As soon as we receive it, we will ship out a replacement to your address, which I'm reconfirming as [LOCATION_ADDRESS_1].",
-          "vendor": "deepgram"
-        },
-        "asHeard": {
-          "transcript": " no yes thank you very much her how long will it how long will the entire process take",
-          "confidence": 0.9343628287315369
-        }
-      },
-      "follow_up": "Yes. Thank you very much. How long will it, how long will the entire process take?"
-    },
-    {
-      "offer": "Great. Once you receive the return label, please send the defective product back to us. As soon as we receive it, we will ship out a replacement to your address, which I'm reconfirming as [LOCATION_ADDRESS_1].",
-      "response": {
-        "asTranscribed": {
-          "transcript": "Yes. Thank you very much. How long will it, how long will the entire process take?",
-          "vendor": "deepgram"
-        },
-        "asHeard": {
-          "transcript": " once we receive the defective product the replacement should arrive within 5 to 7 business days",
-          "confidence": 0.8692674040794373
-        }
-      },
-      "follow_up": "Once we receive the defective product, the replacement should arrive within [DURATION_1]."
-    },
-    {
-      "offer": "Yes. Thank you very much. How long will it, how long will the entire process take?",
-      "response": {
-        "asTranscribed": {
-          "transcript": "Once we receive the defective product, the replacement should arrive within [DURATION_1].",
-          "vendor": "deepgram"
-        },
-        "asHeard": {
-          "transcript": " perfect thank you for your help",
-          "confidence": 0.9718412756919861
-        }
-      },
-      "follow_up": "Perfect. Thank you for your help."
-    },
-    {
-      "offer": "Once we receive the defective product, the replacement should arrive within [DURATION_1].",
+      "offer": "Once we receive the defective product, the replacement should arrive within [DURATION_1]. You'll be notified via email throughout the process.",
       "response": {
         "asTranscribed": {
           "transcript": "Perfect. Thank you for your help.",
-          "vendor": "deepgram"
+          "vendor": "deepgram",
+          "confidence": null
         },
         "asHeard": {
-          "transcript": " you're welcome John if you have any other questions please reach out",
-          "confidence": 0.9155542254447937
+          "transcript": "perfect thank you for your help",
+          "confidence": 0.958747386932373,
+          "vendor": "google"
         }
       },
-      "follow_up": "You're welcome, [NAME_GIVEN_2]. If you have any other questions, please"
+      "follow_up": "You're welcome, [NAME_GIVEN_2]. If you have any other questions or need further assistance, please don't hesitate to call us back. Have a great day."
     },
     {
-      "offer": "Perfect. Thank you for your help.",
+      "offer": "You're welcome, [NAME_GIVEN_2]. If you have any other questions or need further assistance, please don't hesitate to call us back. Have a great day.",
       "response": {
         "asTranscribed": {
-          "transcript": "You're welcome, [NAME_GIVEN_2]. If you have any other questions, please",
-          "vendor": "deepgram"
+          "transcript": "You too.",
+          "vendor": "deepgram",
+          "confidence": null
         },
         "asHeard": {
-          "transcript": " sure thank you goodbye",
-          "confidence": 0.9046414494514465
+          "transcript": "YouTube",
+          "confidence": 0.5463442206382751,
+          "vendor": "google"
         }
       },
-      "follow_up": "Sure."
+      "follow_up": "Goodbye."
     }
   ]
 }
