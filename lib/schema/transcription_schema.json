@@ -1,0 +1,116 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "participants": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["human", "machine"]
+          },
+          "initiatedConversation": {
+            "type": ["boolean", "null"]
+          },
+          "id": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": ["string", "null"]
+              },
+              "phone": {
+                "type": "string"
+              }
+            },
+            "required": ["phone"]
+          }
+        },
+        "required": ["type", "id"]
+      }
+    },
+    "duration": {
+      "type": "integer"
+    },
+    "call_start": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "transcript": {
+      "type": "object",
+      "properties": {
+        "vendor": {
+          "type": "string"
+        },
+        "model": {
+          "type": "string"
+        },
+        "channels": {
+          "type": "integer"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "speechEvents": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "spokenAt": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "start": {
+                "type": "number"
+              },
+              "end": {
+                "type": "number"
+              },
+              "duration": {
+                "type": "number"
+              },
+              "speaker": {
+                "type": "integer"
+              },
+              "sentence": {
+                "type": "string"
+              },
+              "words": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "word": {
+                      "type": "string"
+                    },
+                    "start": {
+                      "type": "number"
+                    },
+                    "end": {
+                      "type": "number"
+                    }
+                  },
+                  "required": ["word", "start", "end"]
+                }
+              }
+            },
+            "required": ["spokenAt", "start", "end", "duration", "speaker", "sentence", "words"]
+          }
+        },
+        "sentiment": {
+          "type": "string"
+        },
+        "sentimentScore": {
+          "type": "number"
+        },
+        "totalDuration": {
+          "type": "integer"
+        }
+      },
+      "required": ["vendor", "model", "channels", "createdAt", "speechEvents", "sentiment", "sentimentScore", "totalDuration"]
+    }
+  },
+  "required": ["participants", "duration", "call_start", "transcript"]
+}
