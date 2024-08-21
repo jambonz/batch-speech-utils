@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "startTime": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "endTime": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "recognizer": {
+      "type": "string"
+    },
+    "turns": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "offer": {
+            "type": "string"
+          },
+          "response": {
+            "type": "object",
+            "properties": {
+              "asTranscribed": {
+                "type": "object",
+                "properties": {
+                  "transcript": {
+                    "type": "string"
+                  },
+                  "vendor": {
+                    "type": "string"
+                  },
+                  "confidence": {
+                    "type": ["number", "null"]
+                  }
+                },
+                "required": ["transcript", "vendor"]
+              },
+              "asHeard": {
+                "type": "object",
+                "properties": {
+                  "transcript": {
+                    "type": "string"
+                  },
+                  "confidence": {
+                    "type": "number"
+                  },
+                  "vendor": {
+                    "type": "string"
+                  }
+                },
+                "required": ["transcript", "confidence", "vendor"]
+              }
+            },
+            "required": ["asTranscribed", "asHeard"]
+          },
+          "follow_up": {
+            "type": "string"
+          }
+        },
+        "required": ["offer", "response", "follow_up"]
+      }
+    }
+  },
+  "required": ["startTime", "endTime", "recognizer", "turns"]
+}
