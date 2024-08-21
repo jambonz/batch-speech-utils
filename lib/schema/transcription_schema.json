@@ -12,7 +12,7 @@
             "enum": ["human", "machine"]
           },
           "initiatedConversation": {
-            "type": "boolean"
+            "type": ["boolean", "null"]
           },
           "id": {
             "type": "object",
@@ -21,18 +21,21 @@
                 "type": ["string", "null"]
               },
               "phone": {
-                "type": "string",
-                "pattern": "^\\+\\d{11}$"
+                "type": "string"
               }
             },
             "required": ["phone"]
           }
         },
-        "required": ["type", "initiatedConversation", "id"]
+        "required": ["type", "id"]
       }
     },
     "duration": {
       "type": "integer"
+    },
+    "call_start": {
+      "type": "string",
+      "format": "date-time"
     },
     "transcript": {
       "type": "object",
@@ -55,22 +58,23 @@
           "items": {
             "type": "object",
             "properties": {
-              "timestamp": {
+              "spokenAt": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "start": {
+                "type": "number"
+              },
+              "end": {
                 "type": "number"
               },
               "duration": {
                 "type": "number"
               },
-              "startTime": {
-                "type": "number"
-              },
-              "endTime": {
-                "type": "number"
-              },
               "speaker": {
                 "type": "integer"
               },
-              "transcript": {
+              "sentence": {
                 "type": "string"
               },
               "words": {
@@ -86,21 +90,17 @@
                     },
                     "end": {
                       "type": "number"
-                    },
-                    "confidence": {
-                      "type": "number"
                     }
                   },
-                  "required": ["word", "start", "end", "confidence"]
+                  "required": ["word", "start", "end"]
                 }
               }
             },
-            "required": ["timestamp", "duration", "startTime", "endTime", "speaker", "transcript", "words"]
+            "required": ["spokenAt", "start", "end", "duration", "speaker", "sentence", "words"]
           }
         },
         "sentiment": {
-          "type": "string",
-          "enum": ["positive", "negative", "neutral"]
+          "type": "string"
         },
         "sentimentScore": {
           "type": "number"
@@ -112,5 +112,5 @@
       "required": ["vendor", "model", "channels", "createdAt", "speechEvents", "sentiment", "sentimentScore", "totalDuration"]
     }
   },
-  "required": ["participants", "duration", "transcript"]
+  "required": ["participants", "duration", "call_start", "transcript"]
 }
